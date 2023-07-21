@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Division Layouts</title>
+  </head>
+  <body style="background-color: gray;">
+    <center>
+      <h2>Horizontal Split</h2>
+      <!-- By default, a division is in white colour only -->
+      <div style="background-color: black; height: 400px; width: 600px">
+        <div style="background-color: red; height: 200px; width: 600px"></div>
+        <div style="background-color: yellow; height: 200px; width: 600px"></div>
+      </div>
+      <h2>Vertical Split</h2>
+      <!-- In vertical split, we have to use float property to place the child divisions inside parent division's layout because every division will try to align to the left side of this page only -->
+      <div style="background-color: black; height: 400px; width: 600px">
+        <div style="background-color: red; height: 400px; width: 200px; float: left;"></div>
+        <div style="background-color: yellow; height: 400px; width: 200px; float: left;"></div>
+        <div style="background-color: blue; height: 400px; width: 200px; float: right;"></div>
+      </div>
+    </center>
+  </body>
+</html>
