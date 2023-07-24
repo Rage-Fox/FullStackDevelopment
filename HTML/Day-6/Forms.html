@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Forms</title>
+	<style>
+		.s1{
+			background-color: lightyellow;
+		}
+	</style>
+</head>
+<body style="background-color: darkblue;">
+	<h1 align="center"><i><u>Drive Ready Registration</u></i></h1>
+	<form align="center" style="background-color:red;">
+		<label>Name</label>
+		<input type="text" placeholder="Enter Name" required class="s1" autofocus>
+		<br><br>
+		<label>Phone Number</label>
+		<input type="tel" placeholder="Enter Contact Number" required class="s1" maxlength="10" autocomplete="on">
+		<br><br>
+		<label>Email</label>
+		<input type="email" placeholder="Enter email" value="@gmail.com" class="s1"></input>
+		<br><br>
+		<label>Password</label>
+		<input type="password" placeholder="Enter Password" required class="s1"></input>
+		<br><br>
+		<label>Date of Birth</label>
+		<input type="date" class="s1"></input>
+		<br><br>
+		<label>Choose the Gender:</label>
+		<input type="radio" name="gender" class="s1">Male</input>
+		<input type="radio" name="gender" class="s1">Female</input>
+		<br><br>
+		<label>Agree The Terms and Conditions:</label>
+		<input type="checkbox"></input>
+		<br><br>
+		<label>Upload a file:</label>
+		<input type="file"></input>
+		<br><br>
+		<label>Select College</label>
+		<select>
+			<option>Select College</option>
+			<option>AEC</option>
+			<option>ACOE</option>
+			<option>ACET</option>
+		</select>
+		<br><br>
+		<label>Address</label>
+		<textarea class="s1"></textarea>
+		<br><br>
+		<label>Review</label>
+		<input type="range">
+		<br><br>
+		<label>Choose Bag Colour:</label>
+		<input type="color">
+		<br><br>
+		<label>Review</label>
+		<input type="datetime-local">
+		<br><br>
+		<input type="submit">
+		<input type="reset" >
+		<!-- disabled=not change. ex:EAMCET application -->
+	</form>
+</body>
+</html>
