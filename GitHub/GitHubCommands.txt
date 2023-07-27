@@ -1,0 +1,38 @@
+There are two types of GitHub:
+1) Centralized Version Control System(Old)
+2) Distributed Version Control System(New)
+***********************************************************
+Disadvantage in Centralized Version Control System is that if a user is directly connected to cloud/repository, then if there is any issue while uploading, that information/code/packet will be destroyed and lost.
+In Distributed Version Control System, user will be connected to local GitHub repository(".git" which will be saved in our system at our end) and that will be connected to cloud. So, even if there is any issues in the middle, the local GitHub repository will store this information/cloud/packet. So the packet will be safe from getting destroyed!
+***********************************************************
+Default branch in GitHub is "main", which acts like a root of the entire data tree!
+***********************************************************
+Git Commands:
+==============
+Login user's GitHub details in our local laptop:
+    git config --global user.name "github user name"
+    git config --global user.email "github email"
+To see the list of logins:
+    git config --global --list
+Initialize Git and create space in the .git mediators in Distributed Version Control System:
+    git init (converts normal user into master)
+Shows what files we have committed:
+    git status
+Adding and commiting files into GitHub using Git:
+    git add "filename"
+    git add  . (add all files)
+    git commit -m "tag"
+Creating a new branch:
+    git checkout -b "new branch name"
+Connecting a specific branch:
+    git branch -M "branch name"
+To establish connection between our laptop and the remote GitHub cloud:
+    git remote add origin "github repo http link .git"
+Pushing into GitHub remote cloud through the mentioned branch name:
+    git push -u origin "branch name"
+Deleting .git created in our laptop/local repository:
+    rm -rf .git
+Removing connection between local repo and remote repo:
+    git remote remove origin
+To download another person's full GitHub files/repository into our local system:
+    git clone "https link shown in repository when clicked on code(green colour symbol)"
