@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introduction to CSS</title>
+    <link rel="stylesheet" type="text/css" href="ExternalStyling.css">
+    <style type="text/css">
+      /* Here we are applying the style globally for all paragraph tags with or without the class selectors. So by default, this style will be applied for all paragraph tags! */
+      p {
+        color: hotpink;
+      }
+      /* .(dot) symbol represents class selector in style tag inside head tag */
+      .internal-paragraph {
+        color: blue;
+        background-color: cyan;
+        font-size: 20px;
+        font-family: cursive;
+      }
+    </style>
+    <!-- First this styling will be applied -->
+    <!-- Then it will be replaced and updated by these styles! -->
+    <!-- So, if external link is provided first and style tag is written later, then style tag will be applied -->
+    <!-- Else, external link will be applied -->
+  </head>
+  <body>
+    <!-- CSS = Cascading Style Sheet is used to apply design and appearance of an HTML with the help of styling -->
+    <!-- There are 3 types of Styling in CSS:
+         1) Inline Styling
+         2) Internal Styling
+         3) External Styling -->
+    <h3>Inline Styling</h3>
+    <p style="color: black; background-color: red">
+      This is Inline Styling in CSS
+    </p>
+    <h3>Internal Styling</h3>
+    <p>This is Internal Styling in CSS</p>
+    <p>
+      You have to write styles inside of the head tag with the help of currently
+      using tag
+    </p>
+    <!-- Selectors in CSS:
+         1) By using Class name
+         2) By using ID name
+         3) By using Element name
+         4) Universal Selector
+         5) Attribute Selector
+         6) Pseudo Selector -->
+    <p class="internal-paragraph">
+      You can also style this paragraph using class attribute in CSS class
+      selectors
+    </p>
+    <h3>External Styling</h3>
+    <p>This is an External Styling</p>
+    <p class="external-paragraph">For this, we have to create a .css file and link that file to this HTML file in the head tag </p>
+    <p class="external-paragraph">Main Purpose of External CSS is code reusability, convenience for larger applications</p>
+  </body>
+</html>
