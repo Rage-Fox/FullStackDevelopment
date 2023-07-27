@@ -1,0 +1,8 @@
+.external-paragraph{
+    border: 5px dashed black;
+    color: chartreuse;
+    background-color: magenta;
+}
+.internal-paragraph{
+    background-color: hotpink;
+}
