@@ -1,0 +1,25 @@
+/* For every input box */
+input[type]{
+    color: red;
+    /* Whatever you write inside input tag boxes, it will show in red colour for all the input boxes */
+}
+/* For 1st box with type attribute as text  */
+input[type="text"]{
+    background-color: aqua;
+}
+/* For 2nd box */
+input[type="number"]{
+    color: green;
+}
+/* For 3rd box */
+input[type="password"]{
+    color: brown;
+    background-color: chartreuse;
+}
+/* I'm not applying for the last input box as the mentioned input type styles will already be applied! */
+/* Anchor tag */
+a[href]{
+    background-color: black;
+    color: gold;
+}
+/* Always remember that this code will be applied line by line and so that if you change a small thing at the end, it will be replaced by the original colour which you have already mentioned in the first lines of code! */

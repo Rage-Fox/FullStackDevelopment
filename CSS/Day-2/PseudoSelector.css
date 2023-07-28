@@ -1,0 +1,27 @@
+/* Pseudo Selectors have many properties such as Hover, After, Before, Active, etc.. which are accessed by using ':' or '::' */
+/* To change the link color besides the default blue colour  */
+a:link{
+    color: green;
+}
+/* When we visit any website, the anchor tag colour changes from blue to purple. But by using this Pseudo class, when visited, the color is turning into pink */
+a:visited{
+    color: pink;
+}
+a:hover{
+    color: red;
+}
+/* While clicking mouse button, it will activate this! */
+a:active{
+    color: black;
+}
+div{
+    background-color: blue;
+    height: 300px;
+    width: 300px;
+}
+div:hover{
+    background-color: red;
+    height: 500px;
+    width: 500px;
+}
+/* Always remember that this code will be applied line by line and so that if you change a small thing at the end, it will be replaced by the original colour which you have already mentioned in the first lines of code! */
