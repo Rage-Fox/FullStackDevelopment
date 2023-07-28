@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Task-1</title>
+  <link rel="stylesheet" href="Task-1.css" />
+</head>
+
+<body class="dflex jus ali">
+  <div class="main">
+    <center>
+      <img src="https://www.logosvgpng.com/wp-content/uploads/2018/04/epam-systems-logo-vector.png" alt="epam"
+        height="100px" width="150px" />
+    </center>
+    <br />
+    <h1 class="heading">HTML Elements</h1>
+    <hr />
+    <ul class="nav dflex">
+      <a href="#home">
+        <li>Home</li>
+      </a>
+      <a href="#headers">
+        <li>Headers</li>
+      </a>
+      <a href="#table">
+        <li>Table</li>
+      </a>
+      <a href="#list">
+        <li>List</li>
+      </a>
+      <a href="#textformats">
+        <li>Text Formats</li>
+      </a>
+      <a href="#blockquotes">
+        <li>Blockquotes</li>
+      </a>
+    </ul>
+    <hr />
+    <br />
+    <p id="home">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae
+      dignissimos accusantium vero pariatur, earum dolores. Necessitatibus
+      sequi quas quis veritatis. Quis alias laudantium, tempora aut id
+      facilis, officiis tenetur sit autem dolorum molestias saepe iste.
+    </p>
+    <br />
+    <div id="headers">
+      <h2 class="heading">Heading 2</h2>
+      <h3 class="heading">Heading 3</h3>
+      <h4 class="heading">Heading 4</h4>
+      <h5 class="heading">Heading 5</h5>
+      <h6 class="heading">Heading 6</h6>
+    </div>
+    <hr />
+    <p>
+      Aditya, the premier promoter of quality education in the coastal
+      districts of <b>Andhra Pradesh</b><!--Bold Tag-->
+      for the past two decades, leads various institutions ranging from K.G to
+      P.G besides professional colleges like <i>Engineering</i><!--Italic Tag-->, Pharmacy and Nursing.
+      <u>Sri Nallamilli Seshareddy</u><!--Underline Tag-->
+      as a founder chairman, promoted the educational society in the name and
+      style of Aditya Academy at
+      <mark>Kakinada</mark><!--Mark Tag is used to highlight the content inside it. To change the highlighted colour, we have to use CSS. But the default colour is "Yellow".-->
+      in the year 1984, with a vision and mission to create a platform for
+      holistic growth and
+      <em>success</em><!--Emphasize Tag is used just like the Italic Tag. It emphasizes the text content.-->
+      to students at all levels. <br /><br />
+      Aditya has made its entry into the educational arena with a public
+      school to meet the needs of primary and secondary education. In
+      succession and with rapid strides, the academy established a number of
+      <del>Junior Colleges</del><!--Delete Tag is used to strike out the content.-->, Degree Colleges,
+      PG Colleges, <sup>Engineering Colleges</sup><!--SuperScript Tag-->, <sub>Pharmacy
+        Colleges</sub><!--SubScript Tag-->, Nursing Colleges, Teacher Training Institutions.
+      <br /><br />
+      The <small>silver-jubilee</small><!--Small Tag-->
+      educational group with <big>50,000+</big><!--Big Tag-->
+      students in 50+ institutions with 5000+ staff across three districts in
+      Andhra Pradesh has become the standard bearer for quality education. In
+      every stream, <strong>Aditya</strong><!--Strong Tag is also like Bold Tag-->
+      has become a spring-board for success through its powered vision,
+      constant innovation and professional excellence.
+    </p>
+    <hr />
+    <h1 class="heading" id="table">Table</h1>
+    <table border="1" cellspacing="0">
+      <!-- Cell Spacing is the spacing in between outer border and inner border -->
+      <thead>
+        <tr>
+          <th>S.No</th>
+          <th>Name</th>
+          <th>College</th>
+          <th>Branch</th>
+          <th colspan="2">Roll Number & Mail</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1)</td>
+          <td>Harsha</td>
+          <td rowspan="3">AEC</td>
+          <td>CSE</td>
+          <td>G6</td>
+          <td>G6@gmail.com</td>
+        </tr>
+        <tr>
+          <td>2)</td>
+          <td>Phani</td>
+          <td>CSE</td>
+          <td>D8</td>
+          <td>D8@gmail.com</td>
+        </tr>
+        <tr>
+          <td>3)</td>
+          <td>Manoj</td>
+          <td>CSE</td>
+          <td>G0</td>
+          <td>G0@gmail.com</td>
+        </tr>
+        <tr>
+          <td>4)</td>
+          <td>Varun</td>
+          <td>ACET</td>
+          <td>CSE</td>
+          <td>D9</td>
+          <td>D9@gmail.com</td>
+        </tr>
+      </tbody>
+    </table>
+    <div class="main" id="list">
+      <!-- Ordered List -->
+      <h1>Ordered List</h1>
+      <ol>
+        <li>AEC</li>
+        <li>ACET</li>
+        <li>ACOE</li>
+      </ol>
+      <!-- Unordered List -->
+      <h1>Unordered List</h1>
+      <ul>
+        <li>CSE</li>
+        <li>ECE</li>
+        <li>EEE</li>
+      </ul>
+      <!-- Description List -->
+      <h1>Description List</h1>
+      <dl>
+        <dt>Bikes</dt>
+        <!-- dt means Description Term -->
+        <dd>BMW 1250GS Adventure</dd>
+        <!-- dd means Description Definition -->
+        <dd>Husqvarna Nuda 900R</dd>
+        <dd>BMW S1000 RR</dd>
+        <dt>Cars</dt>
+        <dd>Range Rover</dd>
+        <dd>Land Rover</dd>
+        <dd>Tesla</dd>
+      </dl>
+      <!-- Nested List -->
+      <h3>Nested List</h3>
+      <ol>
+        <li>
+          This
+          <ul>
+            <li>This</li>
+            <li>Is</li>
+            <li>Unordered</li>
+            <li>List</li>
+          </ul>
+        </li>
+        <li>
+          Is
+          <dl>
+            <dt>This</dt>
+            <dd>Is</dd>
+            <dt>Description</dt>
+            <dd>List</dd>
+          </dl>
+        </li>
+        <li>Ordered</li>
+        <li>List</li>
+      </ol>
+    </div>
+    <label for="details">Details</label>
+    <select name="details" id="">
+      <option value="">HTML</option>
+      <option value="">CSS</option>
+      <option value="">JS</option>
+    </select>
+    <h1 id="textformats">Text Formats</h1>
+    <h3>Article Text</h3>
+    <h4>Article Title</h4>
+    <h5>Article Description</h5>
+    <h1>Preformatted Text</h1>
+    <pre>This is a preformatted text <br> is displayed in a fixed-width <br>font, and it preserves <br> both <br> spaces and <br> line breaks.
+      </pre>
+    <h1>Code</h1>
+    <code>
+        .nav{ <br />
+        list-style: none; <br />
+        gap: 30px; <br />
+        margin: 10px; <br />
+        padding: 10px; <br />
+        }
+      </code>
+    <h1 id="blockquotes">BlockQuotes</h1>
+    <i>
+      <blockquote>
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur
+        expedita possimus, est neque, sit odio quis quod laboriosam magnam
+        facere accusamus debitis eligendi aperiam sunt ut nemo sed deserunt
+        repellat, rerum ipsum? Perferendis odit asperiores animi molestiae
+        repellat a excepturi fugiat corrupti impedit ullam debitis laborum
+        nihil laudantium, dolores accusantium."
+      </blockquote>
+    </i>
+    <br><br>
+    <hr>
+    <br>
+    <form align="right">
+      <label>Name</label>
+      <input type="text" placeholder="Enter Name" required class="s1" autofocus>
+      <br><br>
+      <label>Phone Number</label>
+      <input type="tel" placeholder="Enter Contact Number" required class="s1" maxlength="10" autocomplete="on">
+      <br><br>
+      <label>Email</label>
+      <input type="email" placeholder="Enter email" value="@gmail.com" class="s1"></input>
+      <br><br>
+      <label>Password</label>
+      <input type="password" placeholder="Enter Password" required class="s1"></input>
+      <br><br>
+      <label>Date of Birth</label>
+      <input type="date" class="s1"></input>
+      <br><br>
+      <label>Choose the Gender:</label>
+      <input type="radio" name="gender" class="s1">Male</input>
+      <input type="radio" name="gender" class="s1">Female</input>
+      <br><br>
+      <label>Agree The Terms and Conditions:</label>
+      <input type="checkbox"></input>
+      <br><br>
+      <label>Select College</label>
+      <select>
+        <option>Select College</option>
+        <option>AEC</option>
+        <option>ACOE</option>
+        <option>ACET</option>
+      </select>
+      <br><br>
+      <button type="submit">Submit</button>
+    </form>
+    <br><br>
+    <div class="footer ali jus">
+      <center>© Copyright EPAM Systems</center>
+    </div>
+  </div>
+</body>
+</html>
