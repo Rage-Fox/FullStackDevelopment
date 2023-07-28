@@ -1,0 +1,5 @@
+/* This is Element Selector. We will directly use the tag name */
+p, span{
+    color: blue;
+    font-size: 30px;
+}
