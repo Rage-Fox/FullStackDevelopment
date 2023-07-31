@@ -1,0 +1,9 @@
+website----> https://nicepage.com/wordpress-themes/preview/adventures-has-hiking-and-trekking-options-3134178?device=desktop
+
+orange color --> #f29012
+blue color --> #77aaf6
+light blue --> #b3d0fa
+
+green color --> #98cd72
+
+navigation background --> #f2f2f2
