@@ -1,0 +1,14 @@
+body{
+    background-image: url(https://cdn.shopify.com/s/files/1/0070/7032/files/Fearless_Motivational_Quote_Desktop_Wallpaper_1.png?format=jpg&quality=90&v=1600450412);
+    background-repeat: no-repeat;
+    /* If we don't use this, then the image will be spanned and repeated all over the webpage */
+    background-size: cover;
+    /* Cover for the whole page(Image Stretching) */
+}
+div{
+    height: 400px;
+    width: 400px;
+    border: 5px solid black;
+    background-image: url(https://img.freepik.com/premium-vector/motivational-quotes-quotes-about-life-life-quotes_681002-461.jpg?w=2000);
+    background-size: cover;
+}
