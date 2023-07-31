@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task-1</title>
+    <style>
+        span{
+            box-shadow: 0 0 0 6px cyan;
+            outline: 6px dashed red;
+        }
+        .dotted{
+            height: 200px;
+            width: 200px;
+            background-color: hotpink;
+            outline: 5px dotted red;
+        }
+        .scoop {
+            position: relative;
+            font-size: 25px;
+            font-family: arial black;
+            z-index:1;
+            left:100px;
+            top:100px;
+        }
+        .scoop:before {
+            z-index:-1;
+            content:"";
+            position: absolute;
+            background: radial-gradient(circle at 0 0, transparent 25%, lightblue calc(15%)) top left, radial-gradient(circle at 100% 0, transparent 25%, lightblue calc(15%)) top right, radial-gradient(circle at 0 100%, transparent 25%, lightblue calc(15%)) bottom left, radial-gradient(circle at 100% 100%, transparent 25%, lightblue calc(15%)) bottom right;
+            background-size: 50% 50%;
+            background-repeat: no-repeat;
+            width: 100px;
+            height: 100px;
+            left:-40px;
+            top:-45px;
+        }
+    </style>
+</head>
+<body>
+    <div class="dotted"><center>Harsha</center></div>
+    <br><br>
+    <span>clipped backgrounds + border</span>
+    <br><br>
+    <!-- Scooped Corners Creation -->
+    <div class="scoop"></div>
+</body>
+</html>
