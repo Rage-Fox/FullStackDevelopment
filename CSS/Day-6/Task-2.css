@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    background-color: lightred;
+    overflow-x: hidden;
+}
+header
+{
+    width: 100%;
+    height: 50px;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+button{
+    outline: none;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+}
+button:nth-child(1){
+    background-color: lightgreen;
+}
+button:nth-child(2),button:nth-child(3),button:nth-child(4){
+    background-color: lightblue;
+}
+button:nth-child(5){
+    background-color: red;
+}
+.main
+{
+    width: 100%;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.btn button:nth-child(1){
+    background-color: rgb(55, 55, 226);
+    padding: 11px;
+}
+.btn button:last-child
+{
+    background-color: transparent;
+    color: blue;
+    border: 1px solid blue;
+}
+.left
+{
+    width: 25vw;
+    height: 100%;
+    float: left;
+}
+.left .profile
+{
+    width: 100%;
+    height: 90%;
+    background-color: #fff;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.3);
+}
+.left .profile img{
+    margin-top: 20px;
+    border-radius: 100px;
+    border: 2px solid blue;
+}
+.left .btn
+{
+    margin-top: 10px;
+}
+.separator
+{
+    width: 100%;
+    height: 1px;
+    background-color: #e2e2e2;
+    margin: 15px 0;
+}
+.details .container{
+    padding: 10px;
+}
+.details .container .d{
+    display: flex;
+    gap: 30px;
+    justify-content: space-between;
+}
+.data
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+.right
+{
+    width: 55vw;
+    float: right;
+    border-radius: 8px;
+}
+.right .tp
+{
+    width: 100%;
+    height: 60%;
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.3);
+}
+.right .btm
+{
+    width: 100%;
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px 25px;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.3);
+}
+.right .tp .inp-container
+{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
+input{
+    height: 40px;
+    width: 60%;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid lightgrey;
+    padding-left: 20px;
+    margin-left: 10px;
+}
+.tp button{
+    background-color: blue;
+}
+.progessbar-container
+{
+    padding: 12px 14px;
+}
+.progessbar-container progress{
+    width: 100%;
+    margin-bottom: 20px;
+}
