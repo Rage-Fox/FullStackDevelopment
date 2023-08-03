@@ -1,0 +1,54 @@
+body{
+    background-color: black;
+    font-family: sans-serif;
+    font-size: 15px;
+}
+p{
+    color: lightgrey;
+    margin-bottom: 25px;
+    font-size: 13px;
+}
+.main{
+    height: 300px;
+    width: 860px;
+    background-color: rgb(230, 229, 229);
+    margin-top: 150px;
+    margin-left: 290px;
+    padding: 50px;
+}
+.one,.two,.three{
+    height: 300px;
+    width: 250px;
+    background-color: white;
+    float: left;
+    margin-right: 25px;
+    border-radius: 13%;
+    padding: 10px;
+}
+.three{
+    margin-right: 0px;
+}
+.line{
+    height: 1.5px;
+    background-color: rgb(30, 103, 230);
+    width: 90%;
+    margin-bottom: 25px;
+}
+button{
+    padding: 15px 50px;
+    background-color: rgb(30, 103, 230);
+    color: white;
+    border-radius: 50px;
+    border: none;
+}
+.logo{
+    margin-top: 10px;
+    height: 35px;
+    width: 35px;
+    background-color: rgb(30, 103, 230);
+    padding: 15px;
+}
+i{
+    font-size: 35px;
+    color: white;
+}
