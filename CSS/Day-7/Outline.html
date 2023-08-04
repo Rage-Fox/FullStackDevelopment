@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Outline vs. Border</title>
+    <style>
+        .a{
+            height: 200px;
+            width: 200px;
+            background-color: blue;
+            border: 2px solid red;
+        }
+        .b{
+            height: 200px;
+            width: 200px;
+            background-color: blue;
+            outline: 2px solid red;
+            /* Outline will also be the same as border */
+        }
+    </style>
+</head>
+<body>
+    <div class="a">Border will also include space in box-model</div>
+    <br>
+    <div class="b">Outline will not include space in box-model. Meaning that space will not get counted but the border will be shown.</div>
+</body>
+</html>

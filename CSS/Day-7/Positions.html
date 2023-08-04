@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Positions in CSS</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .a,.b,.c,.d{
+            height: 200px;
+            width: 200px;
+            float: left;
+        }
+        .a{
+            background-color: grey;
+            position: static;
+        }
+        .b{
+            background-color: hotpink;
+            position: relative;
+            top: 0px;
+            left: 40px;
+            top: 50px;
+        }
+        .parent{
+            height: 400px;
+            width: 200px;
+            border: 5px solid red;
+            position: relative;
+            top: 0px;
+            left: 400px;
+        }
+        .c{
+            background-color: skyblue;
+            position: absolute;
+            top: 50px;
+            left: 40px;
+            /* These top and left values will now be calculated according to it's relative parent division */
+        }
+        .d{
+            background-color: red;
+            position: fixed;
+            bottom: 30px;
+            right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Positions: Specifies the positioning method used for elements, positioned by using top, left, bottom, right properties. Positions will move elements without affecting the box-model spacing. -->
+    <!-- Static=default position
+         Relative=It is positioned relative to it's previous original position(by directions)
+         Absolute=It is positioned relative to the parent elements(occupies parent element's starting original position even though there is another div occupied that place(overrides another child div and starts at the parent's original position)), it will not effect the document flow. If there is no parent division for it, then body will be acting as a parent for this absolute division.
+         Fixed=It will be fixed at a certain position, meaning that it will be fixed even if we scroll the webpage. It will be mainly used for navbars or else any fixed div for the webpage
+         Sticky=Similar to fixed but used to hide a division after some scrolling -->
+    <div class="a">
+        <h4>Static</h4>
+    </div>
+    <div class="b">
+        <h4>Relative</h4>
+    </div>
+    <!-- Note: Here, if you didn't mention relative to the parent div and giving absolute position to the child div, the absolute div will consider it's parent as body by default. To avoid this mistake, we always have to give relative parent fot every absolute child -->
+    <div class="parent">
+        <div class="c">
+            <h4>Absolute</h4>
+        </div>
+    </div>
+    <div class="d">
+        <h4>Fixed</h4>
+    </div>
+</body>
+</html>
