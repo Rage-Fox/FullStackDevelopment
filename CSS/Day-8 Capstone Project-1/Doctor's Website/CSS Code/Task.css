@@ -1,0 +1,537 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Ubuntu, sans-serif;
+}
+body{
+    background-color: white;
+    align-items: center;
+    justify-content: center;
+}
+.header{
+    height: 50px;
+    width: 100%;
+    background-color: white;
+    position: sticky;
+}
+.header>i{
+    position: relative;
+    left: 50%;
+    top: 10px;
+    font-size: 25px;
+}
+.main{
+    background-image: url(../Images/doctorback.jpg);
+    width: 100%;
+    background-repeat: no-repeat;
+    height: 700px;
+    background-size: cover;
+}
+.main-card{
+    height: 350px;
+    width: 700px;
+    background-color: white;
+    border-radius: 40px;
+    position: relative;
+    left: 200px;
+    top: 200px;
+    padding: 50px 30px;
+    box-shadow: 0.1px 0.1px 5px grey;
+}
+.main-card-heading{
+    color: grey;
+    font-size: 20px;
+}
+.main-card>h1{
+    font-size: 70px;
+}
+.main-card-para{
+    font-size: 25px;
+    color: black;
+}
+.main-card>button{
+    padding: 15px;
+    width: 50%;
+    background-color: blue;
+    color: white;
+    letter-spacing: 4px;
+    border-radius: 40px;
+    border: none;
+    font-weight: bold;
+    height: 50px;
+}
+.bluediv{
+    height: 300px;
+    width: 100%;
+    background-color: blue;
+    padding: 50px;
+}
+.bluediv>h1{
+    text-align: center;
+    color: white;
+    font-size: 50px;
+    font-weight: bolder;
+}
+.explore{
+    background-color: white;
+    color: black;
+    letter-spacing: 4px;
+    border: none;
+    border-radius: 40px;
+    font-weight: bold;
+    padding: 20px;
+    width: 250px;
+}
+.contacts{
+    background-color: rgba(255, 255, 255, 0.7);
+    color: white;
+    padding: 20px;
+    letter-spacing: 4px;
+    width: 250px;
+    font-weight: bold;
+    border: none;
+    border-radius: 40px;
+}
+.medical{
+    background-color: white;
+    width: 100%;
+    height: 900px;
+    padding: 70px 200px;
+}
+.medical1{
+    width: 50%;
+    float: left;
+}
+.medical1>p{
+    width: 90%;
+    line-height: 25px;
+}
+.medical1>p>span{
+    color: blue;
+}
+.medical1>h1{
+    font-size: 50px;
+}
+.medical1>h5{
+    color: grey;
+    font-size: 20px;
+}
+.medical1>hr{
+    width: 80%;
+}
+.sample1{
+    float: left;
+}
+.sample2{
+    margin-top: 10%;
+    float: right;
+}
+.sampleicon{
+    float: left;
+    font-size: 40px;
+    background-color: blue;
+    color: white;
+    border-radius: 50px;
+}
+.samplepara{
+    float: left;
+    line-height: 25px;
+    width: 65%;
+    margin-left: 8%;
+}
+.medical2{
+    background-image: url(../Images/doctor2.jpg);
+    background-size: cover;
+    width: 50%;
+    height: 80%;
+    background-color: blue;
+    float: right;
+    border-radius: 10%;
+}
+.happycards{
+    height: 250px;
+    width: 100%;
+    background-color: blue;
+}
+.happyhappycard{
+    position: relative;
+    width: 80%;
+    height: 100%;
+    margin: 0px 200px;
+    bottom: 120px;
+}
+.happycard{
+    padding: 60px 25px;
+    border-radius: 15%;
+    float: left;
+    height: 250px;
+    width: 250px;
+    background-color: white;
+    margin: 0 15px;
+}
+.happycard>center>h1{
+    font-size: 70px;
+}
+.happycard>center>h5{
+    color: grey;
+    font-weight: bold;
+    font-size: 15px;
+}
+.working{
+    height: 900px;
+    width: 100%;
+    background-color: blue;
+    color: white;
+}
+.working>center>h5{
+    font-size: 20px;
+    font-weight: 300;
+}
+.working>center>h1{
+    font-size: 50px;
+}
+.working>center>p{
+    font-size: 16px;
+    font-weight: 200;
+}
+.workingclass{
+    padding: 0px 260px;
+    height: 710px;
+    width: 100%;
+    background-color: blue;
+}
+.working-a{
+    height: 700px;
+    width: 330px;
+    background-color: blue;
+    float: left;
+}
+.working-b{
+    height: 700px;
+    width: 330px;
+    background-color: blue;
+    background-image: url(../Images/bigdoc.png);
+    background-position-y: 260px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: relative;
+    float: left;
+}
+.working-c{
+    height: 700px;
+    width: 330px;
+    background-color: blue;
+    float: left;
+}
+.card-1,.card-2,.card-3,.card-4{
+    background-color: blue;
+    width: 100%;
+    height: 335px;
+}
+.card-1-image,.card-2-image,.card-3-image,.card-4-image{
+    width: 60%;
+    height: 200px;
+    background-color: blue;
+    background-image: url(../Images/smalldoc1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 20%;
+}
+.card-2-image{
+    background-image: url(../Images/smalldoc2.jpg);
+}
+.card-3-image{
+    background-image: url(../Images/smalldoc3.jpg);
+}
+.card-4-image{
+    background-image: url(../Images/smalldoc4.jpg);
+}
+.card-1-content,.card-3-content{
+    height: 155px;
+    width: 100%;
+    background-color: blue;
+    color: white;
+}
+.card-2-content,.card-4-content{
+    height: 50px;
+    width: 100%;
+    background-color: blue;
+    color: white;
+}
+.labcards{
+    width: 100%;
+    height: 900px;
+    background-color: white;
+    padding: 0px 200px;
+}
+.labcards-1,.labcards-2{
+    width: 100%;
+    height: 400px;
+    padding: 0 5%;
+    background-color: white;
+}
+.labcards-1-a,.labcards-1-b,.labcards-1-c,.labcards-2-a,.labcards-2-b,.labcards-2-c{
+    height: 400px;
+    float: left;
+    width: 33%;
+    background-color: white;
+}
+.labcards-1-a-image,.labcards-1-b-image,.labcards-1-c-image,.labcards-2-a-image,.labcards-2-b-image,.labcards-2-c-image{
+    height: 200px;
+    background-color: white;
+    width: 80%;
+    top: 50px;
+    position: relative;
+    background-image: url(../Images/doccard1.jpg);
+    background-size: cover;
+    border-radius: 20%;
+}
+.labcards-1-b-image{
+    background-image: url(../Images/doccard2.jpg);
+}
+.labcards-1-c-image{
+    background-image: url(../Images/doccard3.jpg);
+}
+.labcards-2-a-image{
+    background-image: url(../Images/doccard4.jpg);
+}
+.labcards-2-b-image{
+    background-image: url(../Images/doccard5.jpg);
+}
+.labcards-2-c-image{
+    background-image: url(../Images/doccard6.jpg);
+}
+.labcards-1-a-content,.labcards-1-b-content,.labcards-1-c-content,.labcards-2-a-content,.labcards-2-b-content,.labcards-2-c-content{
+    height: 100px;
+    background-color: white;
+    width: 80%;
+    top: 60px;
+    position: relative;
+}
+.labcards-1-a-content>h4,.labcards-1-b-content>h4,.labcards-1-c-content>h4,.labcards-2-a-content>h4,.labcards-2-b-content>h4,.labcards-2-c-content>h4{
+    color: grey;
+}
+.labcards-1-a-content>button,.labcards-1-b-content>button,.labcards-1-c-content>button,.labcards-2-a-content>button,.labcards-2-b-content>button,.labcards-2-c-content>button{
+    padding: 12px 50px;
+    color: white;
+    background-color: blue;
+    border-radius: 40px;
+    letter-spacing: 4px;
+    border: none;
+    font-weight: bold;
+}
+.cravings{
+    height: 800px;
+    width: 100%;
+    padding: 0px 200px;
+    background-color: white;
+}
+.cravings-left,.cravings-right{
+    height: 800px;
+    background-color: white;
+    width: 47%;
+    float: left;
+}
+.cravings-right{
+    float: right;
+}
+.cravings-left-image{
+    height: 600px;
+    width: 100%;
+    background-color: white;
+    background-image: url(../Images/docstretch.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10%;
+}
+.cravings-left-content>span{
+    position: relative;
+    top: 20px;
+}
+.cravings-left-content>button{
+    position: relative;
+    top: 50px;
+    padding: 20px 70px;
+    color: white;
+    background-color: blue;
+    border-radius: 40px;
+    border: none;
+    letter-spacing: 4px;
+    font-weight: bold;
+}
+.qa{
+    height: 100px;
+    background-color: white;
+    width: 100%;
+}
+.qaextend{
+    height: 240px;
+    padding: 20px 30px;
+    width: 100%;
+    background-color: rgb(232, 217, 243);
+}
+.qacontent{
+    float: left;
+}
+.qacontent>h3{
+    position: relative;
+    top: 35px;
+    left: 35px;
+    color: grey;
+}
+.qaicon{
+    float: right;
+    position: relative;
+    top: 20px;
+    right: 35px;
+    font-size: 40px;
+    color: blue;
+}
+.team{
+    height: 1350px;
+    width: 100%;
+    background-color: blue;
+    color: white;
+}
+.team-1,.team-2{
+    width: 75%;
+    margin: 0px 200px;
+    background-color: blue;
+    height: 540px;
+}
+.team-1-a,.team-1-b,.team-1-c,.team-2-a,.team-2-b,.team-2-c{
+    background-color: white;
+    border-radius: 12%;
+    width: 32%;
+    height: 540px;
+    padding: 25px;
+    float: left;
+    margin-right: 15px;
+    margin-bottom: 15px;
+}
+.team-1-a-image,.team-1-b-image,.team-1-c-image,.team-2-a-image,.team-2-b-image,.team-2-c-image{
+    height: 280px;
+    width: 100%;
+    border-radius: 18%;
+    background-image: url(../Images/doc1.jpg);
+    background-size: cover;
+}
+.team-1-b-image{
+    background-image: url(../Images/doc2.jpg);
+}
+.team-1-c-image{
+    background-image: url(../Images/doc3.jpg);
+}
+.team-2-a-image{
+    background-image: url(../Images/doc4.jpg);
+}
+.team-2-b-image{
+    background-image: url(../Images/doc5.jpg);
+}
+.team-2-c-image{
+    background-image: url(../Images/doc6.jpg);
+}
+.team-1-a-content,.team-1-b-content,.team-1-c-content,.team-2-a-content,.team-2-b-content,.team-2-c-content{
+    height: 210px;
+    width: 100%;
+    background-color: white;
+    color: black;
+}
+.team-1-a-content>h4,.team-1-b-content>h4,.team-1-c-content>h4,.team-2-a-content>h4,.team-2-b-content>h4,.team-2-c-content>h4{
+    color: blue;
+}
+.team-1-a-content>h3,.team-1-b-content>h3,.team-1-c-content>h3,.team-2-a-content>h3,.team-2-b-content>h3,.team-2-c-content>h3{
+    color: grey;
+}
+.team-1-a-content>i,.team-1-b-content>i,.team-1-c-content>i,.team-2-a-content>i,.team-2-b-content>i,.team-2-c-content>i{
+    color: blue;
+    font-size: 30px;
+}
+.quotes{
+    height: 650px;
+    background-color: lightgrey;
+    width: 100%;
+    padding: 30px 150px;
+}
+.quotes-1,.quotes-2,.quotes-3,.quotes-4{
+    background-color: white;
+    border-radius: 40px;
+    float: left;
+    height: 250px;
+    width: 550px;
+    margin-left: 28px;
+    margin-right: 30px;
+    margin-bottom: 50px;
+}
+.quotes-1,.quotes-2{
+    margin-top: 25px;
+}
+.mark{
+    position: relative;
+    color: lightgrey;
+    font-size: 100px;
+    top: 30px;
+    left: 30px;
+}
+.quote-content{
+    position: relative;
+    top: -70px;
+    padding: 50px;
+}
+.quote-content>p{
+    font-size: 18px;
+}
+.quote-content>h4{
+    color: blue;
+    font-weight: bolder;
+    font-size: 20px;
+}
+.tablet{
+    height: 800px;
+    background-color: white;
+    width: 100%;
+    padding: 80px 200px;
+}
+.tablet-left{
+    width: 50%;
+    float: left;
+    background-image: url(../Images/tablets.jpg);
+    background-size: cover;
+    height: 650px;
+    border-radius: 40px;
+}
+.tablet-right{
+    width: 50%;
+    height: 650px;
+    float: right;
+    padding: 80px 45px;
+    font-size: 20px;
+}
+.tablet-right>h1{
+    font-size: 45px;
+    font-weight: bolder;
+}
+.tablet-right>p{
+    font-size: 18px;
+    font-weight: 100;
+}
+.tablet-right>p>span{
+    color: blue;
+}
+.tablet-right>button{
+    font-size: 18px;
+    background-color: blue;
+    color: white;
+    border-radius: 40px;
+    width: 250px;
+    height: 70px;
+    border: none;
+}
+.footer{
+    height: 200px;
+    width: 100%;
+    background-color: rgb(52, 50, 50);
+    color: white;
+}
