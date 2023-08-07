@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introduction to Bootstrap</title>
+    <link rel="stylesheet" href="../bootstrap.css">
+    <!-- Inorder for the bootstrap to be responsive, then we have to include the meta tags compulsorily! -->
+    <!--
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    -->
+</head>
+<body>
+    <!-- Bootstrap is a CSS Framework which is used to create responsive web applications (or) websites -->
+    <!-- Responsiveness means that our website should work and show correctly/properly in any screen size -->
+    <!-- Bootstrap has already pre-defined classes and tags for our webpage to be responsive -->
+    <!-- We have to include the Bootstrap to our webpage -->
+    <!-- https://getbootstrap.com/ -->
+    <!-- Two ways to integrate-> Local Integration and Server Integration -->
+    <!-- As for the local integration, download Bootstrap 5-> CSS-> Link bootstrap.css into this html page -->
+    <!-- For server integration, go to-> https://getbootstrap.com/docs/5.3/getting-started/download/ -->
+    <!-- And then copy the CDN via jsDelivr links into head tag -->
+    <!-- Always note that local integration is faster than server integration -->
+    <h1>Bootstrap Heading H1 Tag</h1>
+    <div class="container bg-primary">
+        <h1>This is a container cutted at sides of the page</h1>
+    </div>
+    <div class="container-fluid bg-primary">
+        <h1>This is a container-fluid fully placed in the screen size</h1>
+        <div class="row">
+            <!-- col makes respective number of columns automatically adjust to each other in a single row -->
+            <!-- Whereas col-number makes a column occupy respective number of columns -->
+            <div class="col bg-danger">One row in bootstrap is 12 columns in the website of that division.</div>
+            <div class="col bg-success">One row in bootstrap is 12 columns in the website of that division.</div>
+            <div class="col bg-secondary">One row in bootstrap is 12 columns in the website of that division.</div>
+        </div>
+        <div class="row mt-5">
+            <!-- mt means margin top -->
+            <!-- col makes respective number of columns automatically adjust to each other in a single row -->
+            <!-- Whereas col-number makes a column occupy respective number of columns -->
+            <!-- md-5 means medium screen size occupying 5 columns -->
+            <div class="col-md-5 bg-danger">One row in bootstrap is 12 columns in the website of that division.</div>
+            <div class="col-md-4 bg-success">One row in bootstrap is 12 columns in the website of that division.</div>
+            <div class="col-md-3 bg-secondary">One row in bootstrap is 12 columns in the website of that division.</div>
+        </div>
+    </div>
+</body>
+</html>
