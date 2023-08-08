@@ -1,0 +1,18 @@
+.container
+{
+	position: relative;
+}
+#col
+{
+	border: 1px black solid;
+}
+#col2
+{
+	border-left: 10px black solid;
+	border-right: 5px black solid;
+}
+.row
+{
+	height: 200px;
+	border: 5px black solid;
+}

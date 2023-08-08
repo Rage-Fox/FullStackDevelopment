@@ -1,0 +1,39 @@
+#col
+{
+	background-color: blue;
+	border: 3px solid white;
+	color: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+#main
+{
+	height: 600px;
+}
+#main1
+{
+	height: 400px;
+}
+#main2
+{
+	height: 100px;
+}
+#main3
+{
+	height: 100px;
+	
+}
+#main4
+{
+	height: 300px;
+}
+#col1
+{
+	background-color: blue;
+}
+#col2
+{
+	border: 3px solid white;
+	height: 100px;
+}
