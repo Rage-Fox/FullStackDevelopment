@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  </head>
+  <body>
+    <div class="container mt-3">
+      <h2>Input Group</h2>
+      <p>
+        The .input-group class is a container to enhance an input by adding an
+        icon, text or a button in front or behind the input field as a "help
+        text".
+      </p>
+      <p>Use the .input-group-text class to style the specified help text.</p>
+
+      <form action="/action_page.php">
+        <div class="input-group mb-3">
+          <span class="input-group-text">@</span>
+          <input
+            type="text"
+            class="form-control"
+            placeholder="Username"
+            name="usrname"
+          />
+        </div>
+
+        <div class="input-group mb-3">
+          <input
+            type="text"
+            class="form-control"
+            placeholder="Your Email"
+            name="email"
+          />
+          <span class="input-group-text">@example.com</span>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+    </div>
+  </body>
+</html>
