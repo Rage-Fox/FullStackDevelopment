@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array of Objects in JavaScript</title>
+</head>
+<body>
+    <script>
+        var trainee=[{
+            "Name":"Harsha",
+            "RollNumber":"21A91A05G6",
+            "College":"AEC",
+            "Branch":"CSE",
+            "Passout_Year":2025,
+        },{
+            "Name":"Manoj",
+            "RollNumber":"21A91A05G0",
+            "College":"AEC",
+            "Branch":"CSE",
+            "Passout_Year":2025,
+        }]
+        console.log(trainee[0].Name);
+        console.log(trainee[0].RollNumber);
+        console.log(trainee[0].College);
+        console.log(trainee[0].Branch);
+        console.log(trainee[0].Passout_Year);
+        console.log(trainee[1].Name);
+        console.log(trainee[1].RollNumber);
+        console.log(trainee[1].College);
+        console.log(trainee[1].Branch);
+        console.log(trainee[1].Passout_Year);
+        // The same output in forin loops
+        for (let i = 0; i < trainee.length; i++) {
+            console.log(i);
+            for (let key in trainee[i]) {
+                console.log(key+" : "+trainee[i][key]);
+            }
+        }
+    </script>
+</body>
+</html>

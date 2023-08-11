@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introduction to JavaScript</title>
+    <!-- If you want to link external js file in this html page, then use script tag and then give source to that file -->
+    <script src="Introduction.js"></script>
+    <!-- As JavaScript is also a line by line code execution language, it'll print the contents in the linked file first as we linked it in the first few lines of the code -->
+</head>
+<body>
+    <!-- JavaScript (often shortened to JS) is a lightweight, interpreted, object-oriented language with first-class functions -->
+    <!-- JavaScript is a scripting language which looks and feels like other programming languages such as C, C++, Python, Java -->
+    <!-- But JavaScript varies in it's syntax. It is used to perform tasks and clickable events for a webpage. It is very much important aspect in the field web development -->
+    <h1>Introduction to JavaScript</h1>
+    <!-- You can write JS in two ways: Internal and External(".js" extension) -->
+    <!-- Everytime you have to write JavaScript internally, we have to write it's code in <script></script> tags. -->
+    <script src="Introduction.js"></script>
+    <script>
+        var b=20;
+        document.write(b,"<br>");
+        // Here, it'll print at last but the thing is it'll print b and a values side by side. Because we haven't added any break tag in the document.write() line.
+        document.write("Welcome to JS World!");
+        // Here any string printing has to be represented in double quotes
+        document.write("<br>"+"This is b value: "+b+"<br>");
+        // To print string and a value, use plus operator to combine them. Make sure that you don't put any variable which stored a value in double quotes and leave it as alone!
+        document.write("This is a value: ",a,"<br>");
+        // We can also write the same by using comma operator.
+        var name="Harsha";
+        name+=' Reddy';
+        // Concatenation of strings. You can write strings in both single quotes and double quotes.
+        document.write(name,"<br>");
+        document.write(name.length,"<br>");
+        // To print the length of the string variable
+        var c;
+        document.write(c,"<br>")
+        // Any variable not initialized will show the variable value as undefined!
+        c=10;
+        document.write(typeof(c),"<br>");//number
+        c='Hello!';
+        document.write(typeof(c),"<br>");//string
+        c=10.23;
+        document.write(typeof(c),"<br>");//Note: shows number but not as float!
+        console.log(a,b,c);//Shows output in the console window in the inspect tab in website.
+        alert("Hello!");//shows alert popup box in the website window
+        // window.alert("Hi");//this is another way to show the alert box in the website window
+        var gender=true;
+        document.write(typeof(gender),"<br>");//It is a boolean value
+        gender="true";
+        document.write(typeof(gender),"<br>");//It is not a boolean but instead it is a string as the value is represented in quotations.
+    </script>
+</body>
+</html>

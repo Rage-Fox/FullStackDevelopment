@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objects in JavaScript</title>
+</head>
+<body>
+    <script>
+        // Objects look like Dictionaries in Python
+        // It can also store any type of variable in it just like arrays
+        var trainee={
+            "Name":"Harsha",
+            "RollNumber":"21A91A05G6",//If you give space between roll and number then, it will not work, instead use camelcase or else use underscore(_) instead of spaces.
+            "College":"AEC",
+            "Branch":"CSE",
+            "Passout_Year":2025,
+        }
+        console.log(trainee.Name);//You can access any elements of the object using dot(.) operator
+        // This output will be shown in console logs in inspect tab of the website/webpage.
+        console.log(trainee.RollNumber);
+        console.log(trainee.College);
+        console.log(trainee.Branch);
+        console.log(trainee.Passout_Year);
+        // We can also use for loop instead of printing single values everytime!
+        for(const key in trainee) {
+            console.log(`${key}: ${trainee[key]}`);
+        }
+        // To store more than one person's information, use array of objects
+    </script>
+</body>
+</html>
