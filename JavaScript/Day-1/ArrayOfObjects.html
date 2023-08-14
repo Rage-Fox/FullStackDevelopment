@@ -20,22 +20,22 @@
             "Branch":"CSE",
             "Passout_Year":2025,
         }]
-        console.log(trainee[0].Name);
-        console.log(trainee[0].RollNumber);
-        console.log(trainee[0].College);
-        console.log(trainee[0].Branch);
-        console.log(trainee[0].Passout_Year);
-        console.log(trainee[1].Name);
-        console.log(trainee[1].RollNumber);
-        console.log(trainee[1].College);
-        console.log(trainee[1].Branch);
-        console.log(trainee[1].Passout_Year);
+        document.write(trainee[0].Name+"<br>");
+        document.write(trainee[0].RollNumber+"<br>");
+        document.write(trainee[0].College+"<br>");
+        document.write(trainee[0].Branch+"<br>");
+        document.write(trainee[0].Passout_Year+"<br>"+"<br>");
+        document.write(trainee[1].Name+"<br>");
+        document.write(trainee[1].RollNumber+"<br>");
+        document.write(trainee[1].College+"<br>");
+        document.write(trainee[1].Branch+"<br>");
+        document.write(trainee[1].Passout_Year+"<br>"+"<br>");
         // The same output in forin loops
         for (let i = 0; i < trainee.length; i++) {
-            console.log(i);
-            console.log(trainee[i]);//Printing the object present at single array index
+            document.write("<br>"+i+"<br>");
+            document.write(trainee[i]+"<br>");//Printing the object present at single array index
             for (let key in trainee[i]) {
-                console.log(key+" : "+trainee[i][key]);
+                document.write(key+" : "+trainee[i][key]+"<br>");
             }
         }
     </script>
