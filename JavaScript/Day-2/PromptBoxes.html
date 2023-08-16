@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prompt Boxes</title>
+</head>
+<body>
+    <h1>Prompt Boxes In JavaScript</h1>
+    <script>
+        var name=prompt("Enter your name:");
+        alert("Hello "+name+"!");
+        document.write("Your name is: "+name+"<br>");
+        var value=prompt("Enter a value:");
+        // If you given the input as 10+20, then it will print 10+20 only(takes string)
+        alert("Value is: "+eval(value));
+        // So to print 10+20 value as 30 instead of 10+20, then use eval() function to perform arithmetic operations for two or more numbers
+        document.write("The value is: "+eval(value)+"<br>");
+        var a=prompt("Enter a value:");
+        var b=prompt("Enter b value:");
+        var c=parseInt(a)+parseInt(b);
+        // parseInt() is used to convert a given string into integer number
+        alert("a+b value is: "+c);
+        document.write("Value of a is: "+parseInt(a)+"<br>");
+        document.write("Value of b is: "+parseInt(b)+"<br>");
+        document.write("Value of a+b is c: "+parseInt(c));
+    </script>
+</body>
+</html>

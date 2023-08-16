@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variables in JavaScript</title>
+</head>
+<body>
+    <h1>Variables in JavaScript</h1>
+    <script>
+        /* There are three types of Variables in JavaScript
+            1) var ==> global scoped variable (redeclaration and reinitialization is possible)
+            2) let ==> block/local scoped variable (reinitialization is possible but not redeclaration)
+            3) const ==> block/local scoped variable, value will never change (redeclaration as well as reinitialization are not possible)
+        */
+        var a=10;
+        var a=20;
+        document.write(a+"<br>");
+        let b=30;
+        // let b=40;// It is not possible as let doesn't allow redeclaration
+        {
+            var c=10;
+            let d=20;
+        }
+        document.write(c+"<br>");// This is possible as c was declared using var keyword which is a global scoped variable
+        // document.write(d+"<br>");// This is not possible as d was declared using let keyword which is a block scoped variable
+        const pi=3.14;
+        // pi=4.13;// This is not possible as for const keyword reinitialization is not possible
+        // const pi=5555;// This is also not possible as for const keyword redeclaration is not possible
+        document.write(pi+"<br>")
+    </script>
+</body>
+</html>
