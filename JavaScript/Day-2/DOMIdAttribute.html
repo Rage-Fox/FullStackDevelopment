@@ -8,7 +8,7 @@
 <body>
     <!-- DOM means Document Object Model. It is used to manipulate content of the webpage using selectors concept. -->
     <h1 id="headingAttribute1">Document Object Model(DOM) Properties</h1>
-    <h1 id="headingAttribute2"></h1>
+    <h2 id="headingAttribute2"></h2>
     <!-- https://www.w3schools.com/js/js_htmldom.asp -->
     <script>
         console.log(document);
@@ -17,9 +17,13 @@
         // To write this in a single line, use below shortcut!
         // document.getElementById("headingAttribute1").innerHTML="Hello!";
         // Now, the content inside the mentioned id selector will now be replaced by the message mentioned above
+        hh1.style.fontSize = "50px";
+        // This is to increase font-size for h1 tag using JavaScript
         let hh2=document.getElementById("headingAttribute2");
         hh2.innerText="<p>JavaScript</p>";
         // The difference between innerHTML and innerText is that innerHTML takes in other element tags but innerText will display the tags as text content only.
+        hh2.style.color="blue";
+        // This is to change color for h2 tag using JavaScript
     </script>
 </body>
 </html>
