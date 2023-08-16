@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document Object Model Properties</title>
+</head>
+<body>
+    <!-- DOM means Document Object Model. It is used to manipulate content of the webpage using selectors concept. -->
+    <h1 id="headingAttribute1">Document Object Model(DOM) Properties</h1>
+    <h1 id="headingAttribute2"></h1>
+    <!-- https://www.w3schools.com/js/js_htmldom.asp -->
+    <script>
+        console.log(document);
+        let hh1=document.getElementById("headingAttribute1");
+        hh1.innerHTML="<p>JavaScript</p>";
+        // To write this in a single line, use below shortcut!
+        // document.getElementById("headingAttribute1").innerHTML="Hello!";
+        // Now, the content inside the mentioned id selector will now be replaced by the message mentioned above
+        let hh2=document.getElementById("headingAttribute2");
+        hh2.innerText="<p>JavaScript</p>";
+        // The difference between innerHTML and innerText is that innerHTML takes in other element tags but innerText will display the tags as text content only.
+    </script>
+</body>
+</html>
