@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM For Tables</title>
+</head>
+<body>
+    <h1>DOM For Tables</h1>
+    <table>
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>5</td>
+            <td>6</td>
+        </tr>
+        <tr>
+            <td>7</td>
+            <td>8</td>
+            <td>9</td>
+        </tr>
+    </table>
+    <script>
+        var tab=document.getElementsByTagName("table");
+        tab[0].border="1px solid black";
+        tab[0].cellSpacing="2px";
+        tab[0].cellPadding="10px";
+    </script>
+</body>
+</html>
