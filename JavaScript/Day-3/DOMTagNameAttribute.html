@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Tag Name Attribute</title>
+</head>
+<body>
+    <h1>DOM Tag Name Attributes</h1>
+    <ul>
+        <li>AEC</li>
+        <li>ACET</li>
+        <li>ACOE</li>
+    </ul>
+    <script>
+        let list=document.getElementsByTagName("li");
+        // Just like ClassName, this property will also stores as a collection of elements in an array format.
+        list[0].style.color="green";
+        list[0].style.fontSize="50px";
+        list[1].style.color="red";
+        list[2].style.color="blue";
+    </script>
+</body>
+</html>
