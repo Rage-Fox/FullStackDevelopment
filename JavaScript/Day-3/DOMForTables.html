@@ -9,19 +9,19 @@
     <h1>DOM For Tables</h1>
     <table>
         <tr>
-            <td>1</td>
-            <td>2</td>
-            <td>3</td>
+            <td></td>
+            <td></td>
+            <td></td>
         </tr>
         <tr>
-            <td>4</td>
-            <td>5</td>
-            <td>6</td>
+            <td></td>
+            <td></td>
+            <td></td>
         </tr>
         <tr>
-            <td>7</td>
-            <td>8</td>
-            <td>9</td>
+            <td></td>
+            <td></td>
+            <td></td>
         </tr>
     </table>
     <script>
@@ -29,6 +29,17 @@
         tab[0].border="1px solid black";
         tab[0].cellSpacing="2px";
         tab[0].cellPadding="10px";
+        var row=document.getElementsByTagName("tr");
+        row[0].style.backgroundColor="orange";
+        row[1].style.backgroundColor="blue";
+        row[2].style.backgroundColor="green";
+        var data=document.getElementsByTagName("td");
+        // Displaying content inside td tags using getElementsByTagName() method in DOM.
+        for (let i = 0; i < data.length; i++) {
+            data[i].innerText=i+1;
+        }
+        data[3].style.backgroundColor="white";
+        data[5].style.backgroundColor="white";
     </script>
 </body>
 </html>
