@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Query Selector</title>
+</head>
+<body>
+    <h1 id="heading">Query Selector Method</h1>
+    <p class="course">HTML</p>
+    <p class="course">CSS</p>
+    <p class="course">JS</p>
+    <script>
+        // Query selector can take in class names, id names, and tag names
+        let p1=document.querySelector(".course,#heading");
+        // You have to give query selector properties just like you give in CSS file/properties
+        p1.innerHTML="Hyper Text Markup Language";
+        // Here, the query selector is used to select only first tag even though we have the same class name for multiple tags.
+        let p2=document.querySelector(".course");
+        p2.innerHTML="Hyper Text Markup Language";
+        let p3=document.querySelectorAll(".course");
+        // This selects all the attributes under one name through which we can apply properties for all of them at once using for loop
+        for (let i = 0; i < p3.length; i++) {
+            p3[i].style.color="red";
+        }
+    </script>
+</body>
+</html>
