@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Element Child</title>
+</head>
+<body>
+    <!-- I'm not writing paragraph tag in body but a paragraph is created and displaying it's content using JavaScript. -->
+    <script>
+        let para = document.createElement('p');
+        para.innerText = "This is a paragraph element tag created using JavaScript and appended this as a child to the body of document."
+        document.body.appendChild(para);
+    </script>
+</body>
+</html>

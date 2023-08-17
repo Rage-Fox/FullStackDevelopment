@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Image Property</title>
+</head>
+<body>
+    <img src="image.png" alt="codemind logo" id="image">
+    <!-- I'm giving wrong path in which the image doesn't even exist -->
+    <script>
+        document.images[0].src="https://play-lh.googleusercontent.com/Toz2i3sRgTxh4Gi1s1oWZpVqOyZq9etEyzPXyZHzGrSXd-jIYmTUj65CigJfvONGdCU";
+        // We can also use document.getElementById("image").src="image path";
+        document.getElementById("image").style.height="500px";
+        document.getElementById("image").style.width="500px";
+    </script>
+</body>
+</html>

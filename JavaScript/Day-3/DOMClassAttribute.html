@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Class Attribute</title>
+</head>
+<body>
+    <h1>DOM Using Class Attributes</h1>
+    <p class="course">HTML</p>
+    <p class="course">CSS</p>
+    <p class="course">JS</p>
+    <script>
+        let paras=document.getElementsByClassName("course");
+        // This paras will store all the class names attributes as a collection of array format.
+        console.log(paras);
+        // Thus in order to change the content of any particular tags, then use array indexes like below!
+        paras[0].innerHTML="Hyper Text Markup Language";
+        paras[1].innerHTML="Cascading Style Sheets";
+        paras[2].innerHTML="JavaScript";
+        paras[0].style.color="red";
+        paras[1].style.color="purple";
+        paras[2].style.color="yellow";
+    </script>
+</body>
+</html>

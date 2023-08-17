@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Input Field</title>
+</head>
+<body>
+    <input type="text" value="Harsha" id="inputid">
+    <label for="" id="labelfield"></label>
+    <script>
+        let inp=document.getElementById("inputid");
+        inp.value="Harshendra";
+        // Changing the value from "Harsha" to something else
+        inp.style.border="1px solid red";
+        inp.style.borderRadius="2px";
+        document.getElementById("labelfield").innerHTML="<br><br>Please enter your name";
+        document.getElementById("labelfield").style.color="red";
+    </script>
+</body>
+</html>
