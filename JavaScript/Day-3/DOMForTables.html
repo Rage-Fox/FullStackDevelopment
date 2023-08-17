@@ -30,16 +30,17 @@
         tab[0].cellSpacing="2px";
         tab[0].cellPadding="10px";
         var row=document.getElementsByTagName("tr");
-        row[0].style.backgroundColor="orange";
-        row[1].style.backgroundColor="blue";
-        row[2].style.backgroundColor="green";
         var data=document.getElementsByTagName("td");
         // Displaying content inside td tags using getElementsByTagName() method in DOM.
         for (let i = 0; i < data.length; i++) {
             data[i].innerText=i+1;
         }
-        data[3].style.backgroundColor="white";
-        data[5].style.backgroundColor="white";
+        // You can display the same values in reverse order
+        /*
+        for (let i = data.length; i > 0; i--) {
+            data[data.length-i].innerText=i;
+        }
+        */
     </script>
 </body>
 </html>
