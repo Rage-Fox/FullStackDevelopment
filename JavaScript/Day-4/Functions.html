@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Functions In JavaScript</title>
+</head>
+<body>
+    <!-- Functions are used to decrease code length by storing the common code under a single block(by giving function name) and is used to reexecute/recall the same code again and again without writing it all the time -->
+    <!-- There are two types of functions in JavaScript
+        1) Normal Functions
+        2) Anonymous Functions
+        3) Arrowed Functions
+    -->
+    <script>
+        /*
+        //normal function syntax
+        functionkeyword functionname(arg1,arg2,arg3,....,argn){
+            //statements
+            //return statement(optional)
+        }
+        */
+        // Normal function without arguments
+        function test(){
+            document.write("This is a normal test function!"+"<br>");
+        }
+        test();
+        // Normal function with arguments(you can name as anything for the arguments names)
+        function getName(name){
+            document.write("Hello "+name+"!"+"<br>");
+        }
+        getName("Harshendra");
+        /*
+        // Function to scan a roll number from ID Card and displaying it!
+        function ScanRoll(){
+            var id=prompt("Scan your ID Card!");
+            document.write("Welcome "+id);
+        }
+        ScanRoll();
+        */
+        // Function with two arguments(giving default values to avoid errors)
+        function twosum(a=0,b=0){
+            document.write("The sum of the two numbers "+a+" and "+b+" is: "+(a+b)+"<br>");
+        }
+        twosum(5,2);
+        twosum(10);
+        // If you give only one argument and performing operation it'll show NaN.
+        // Thus, we have to allot default values to the arguments in the function as a=0,b=0 to avoid errors like this!
+        twosum();
+        // Function to print cube of a number
+        function cube(n=0){
+            document.write("The cube of "+n+" is: "+(n*n*n));
+        }
+        cube(2);
+        // For example if there are two functions with same function name and with same number of arguments, then always remember that JavaScript is also a line by line code executer. Thus at last which function that you wrote, only that will execute even though multiple same functions exists in the code.
+    </script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>setTimeOut() Function in JavaScript</title>
+</head>
+<body>
+    <script>
+        // Sometimes we want our code to execute a bit later after some time(delaying). For that we need to use setTimeOut() function.
+        // In this, 1000 means 1 sec. So, if you want 2 secs delay, then use 2000 milliseconds
+        setTimeout(test=()=> {
+            document.write("This is a test function which executes after 2 seconds delay!<br>");
+        }, 2000);
+        // The below function is known as Callback function!
+        setTimeout(testing,5000);
+        function testing(){
+            document.write("This is a testing function which executes after 5 seconds delay!<br>");
+        }
+        var i=6000;
+        while(i<=10000){
+            setTimeout(() => {
+                document.write(((i/1000)-5)+"<br>");
+            }, i);
+            i+=1000;
+        }
+    </script>
+</body>
+</html>

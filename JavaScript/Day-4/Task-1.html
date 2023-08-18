@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task-1</title>
+</head>
+<body>
+    <table border="1">
+        <thead>
+            <th>Course Name</th>
+            <th>Course Number</th>
+            <th>Course Fees</th>
+            <th>Place</th>
+        </thead>
+        <tbody id="tb">
+        </tbody>
+    </table>
+    <script>
+        let courses=[
+            {
+                "name":"Harsha",
+                "course":"FSD_AN",
+                "fees":24000,
+                "place":"Surampalem",
+            },
+            {
+                "name":"Manoj",
+                "course":"FSD_AN",
+                "fees":24000,
+                "place":"Surampalem",
+            },
+            {
+                "name":"Mahendra",
+                "course":"FSD_FN",
+                "fees":24000,
+                "place":"Surampalem",
+            },
+        ];
+        let tb=document.getElementById("tb");
+        for (let i = 0; i < courses.length; i++) {
+            let tr=document.createElement("tr");
+            for (const key in courses[i]) {
+                let td=document.createElement("td");
+                td.innerText=courses[i][key];
+                tr.appendChild(td);
+            }
+            tb.appendChild(tr);
+        }
+    </script>
+</body>
+</html>

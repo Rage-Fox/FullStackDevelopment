@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrowed Functions</title>
+</head>
+<body>
+    <!-- Arrowed Functions: ES6 Features in JavaScript(One of the advanced concepts of JavaScript) -->
+    <script>
+        /*
+        Arrowed functions are represented with certain rules.
+        // 1) Using arrow symbol as =>
+        // 2) No function keyword exists
+        // 3) After function name, we have to use = symbol
+        // 4) Use arrow symbol after writing arguments list
+        // 5) After the arrow symbol, open curly braces and write the block of statements just like as you write them in normal functions
+        */
+        mul=(num1=0,num2=0)=>{
+            document.write((num1*num2)+"<br>");
+        }
+        mul(2,4);
+        // Arrowed functions with one argument
+        // If it is a single argument, then we don't need to give parentheses to the argument list
+        // See the below code for example reference
+        getid=roll=>{
+            document.write((roll)+"<br>");
+        }
+        getid(1234);
+        // Arrowed functions without/no arguments
+        // You can represent empty arguments as empty parentheses with no arguments
+        test=()=>{
+            document.write("This is a test function<br>");
+        }
+        test();
+        //  Or else just give _ as the argument even though you don't pass any argument
+        testing=_=>{
+            document.write("This is a testing function<br>");
+        }
+        testing();
+    </script>
+</body>
+</html>
