@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Events | Task</title>
+	<style type="text/css">
+		button{
+			border: 2px solid orange;
+			padding: 10px;
+			background: orange;
+			width: 100px;
+			border-radius: 10px;
+			font-size: 15px;
+			font-weight: bold
+		}
+	</style>
+</head>
+<body>
+	<center>
+		<button onclick="nextslide()">Next</button>
+		<button onclick="prevslide()">Prev</button>
+		<p id="output_id">
+			<img src="1.jpg" style="width: 200px;height: 200px;" />
+		</p>
+	</center>
+	<script>
+		var i = 1;
+		function nextslide(){
+			if(i<5){
+				var res = ++i;
+				document.getElementById('output_id').innerHTML = "<img src='"+res+".jpg' style='width:200px;height:200px;' />";
+			}			
+		}
+		function prevslide(){
+			if(i>1){
+				var res = --i;
+				document.getElementById('output_id').innerHTML = "<img src='"+res+".jpg' style='width:200px;height:200px;' />";
+			}			
+		}
+	</script>
+</body>
+</html>
