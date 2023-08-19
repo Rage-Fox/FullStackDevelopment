@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Event Listener</title>
+</head>
+<body>
+    <button id="btn_id">ClickHere</button>
+	<script type="text/javascript">
+		let btn=document.getElementById('btn_id');
+		btn.addEventListener('click',test)
+		function test(){
+			alert("testing")
+			document.body.style.background='red'
+		}
+	</script>
+</body>
+</html>

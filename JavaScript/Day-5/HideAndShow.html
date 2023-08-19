@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hide And Show Using JavaScript</title>
+</head>
+<body>
+    <button id="btn1">show</button>
+	<button id="btn2">hide</button>
+	<script type="text/javascript">
+        let button1=document.getElementById('btn1');
+		let button2=document.getElementById('btn2');
+		let x=document.createElement('div');
+		x.style.height="300px";
+		x.style.width="300px";
+		document.body.appendChild(x);
+		button1.addEventListener('click', function(){
+			x.style.backgroundColor="red";
+		});
+		button2.addEventListener('click', function(){
+			x.style.display="none";
+		});
+	</script>
+</body>
+</html>
