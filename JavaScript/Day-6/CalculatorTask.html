@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator Using JavaScript</title>
+    <style>
+        *{
+            background-color: black;
+            color: blue;
+        }
+        td{
+            background-color: yellow;
+            color: black;
+            text-align: center;
+            font-weight: bold;
+            font-size: 40px;
+            border: 1px solid blue;
+        }
+        td:not(#result_id){
+            /* Applying hover cursor property for all td's except result_id(text box) attribute */
+            cursor: pointer;
+        }
+        #result_id{
+            background-color: red;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <h1>Calculator Using JavaScript</h1>
+        <table border="1" cellspacing="0" cellpadding="10" width="600px" height="500px" id="table_id">
+            <tr>
+                <td colspan="4" style="height: 80px;text-align: right;" id="result_id"></td>
+            </tr>
+            <tr>
+                <td onclick="getnum('9')">9</td>
+                <td onclick="getnum('8')">8</td>
+                <td onclick="getnum('7')">7</td>
+                <td onclick="getnum('/')">/</td>
+            </tr>
+            <tr>
+                <td onclick="getnum('6')">6</td>
+                <td onclick="getnum('5')">5</td>
+                <td onclick="getnum('4')">4</td>
+                <td onclick="getnum('*')">*</td>
+            </tr>
+            <tr>
+                <td onclick="getnum('3')">3</td>
+                <td onclick="getnum('2')">2</td>
+                <td onclick="getnum('1')">1</td>
+                <td onclick="getnum('-')">-</td>
+            </tr>
+            <tr>
+                <td onclick="clearall()">C</td>
+                <td onclick="getnum('0')">0</td>
+                <td onclick="getnum('=')">=</td>
+                <td onclick="getnum('+')">+</td>
+            </tr>
+        </table>
+    </center>
+    <script>
+        function getnum(val){
+            if(val=='='){
+                let res=document.getElementById("result_id").innerText;
+                document.getElementById("result_id").innerText=eval(res);
+            }
+            else
+                document.getElementById("result_id").innerText+=val;
+        }
+        function clearall(){
+            document.getElementById("result_id").innerText="";
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Task Using Divisions and JavaScript</title>
+    <style>
+        div{
+            border: 1px solid black;
+        }
+        #main{
+            margin-top: 100px;
+            height: 400px;
+            width: 1000px;
+            gap: 60px;
+            padding: 50px;
+            display: flex;
+        }
+        #left{
+            height: 380px;
+            width: 650px;
+            display: flex;
+            padding: 10px;
+            gap: 10px;
+        }
+        #right{
+            height: 400px;
+            width: 350px;
+        }
+        #image1{
+            height: 380px;
+            width: 200px;
+        }
+        #image2{
+            height: 380px;
+            width: 200px;
+        }
+        #image3{
+            height: 380px;
+            width: 200px;
+        }
+        #image1>img,#image2>img,#image3>img{
+            height: 380px;
+            width: 200px;
+        }
+        #image{
+            height: 400px;
+            width: 300px;
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <div id="main">
+            <div id="left">
+                <div id="image1">
+                    <img src="1.png" alt="" onclick="getImage('1.png')">
+                </div>
+                <div id="image2">
+                    <img src="2.png" alt="" onclick="getImage('2.png')">
+                </div>
+                <div id="image3">
+                    <img src="3.png" alt="" onclick="getImage('3.png')">
+                </div>
+            </div>
+            <div id="right">
+            </div>
+        </div>
+    </center>
+    <script>
+        function getImage(s){
+            var res=document.getElementById("right").innerHTML="<img src='"+s+"' alt='' id='image'>";
+        }
+    </script>
+</body>
+</html>
