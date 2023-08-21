@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>On Mouse Over</title>
+</head>
+<body>
+    <div class="image" style="height: 400px; width: 200px; border: 5px solid black;">
+        <img src="EmptyBalloon.jpg" alt="" onmouseover="getImage()" style="height: 400px; width: 200px;">
+    </div>
+    <script>
+        function getImage(){
+            if(document.images[0].src.match("EmptyBalloon.jpg")){
+                document.images[0].src='FilledBalloon.jpg';
+            }
+            else{
+                document.images[0].src='EmptyBalloon.jpg';
+            }
+        }
+    </script>
+</body>
+</html>

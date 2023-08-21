@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Number Game</title>
+</head>
+<body>
+    <center>
+        <h2><u>Select one Number</u></h2>
+            <div class="radios">
+                <input type="radio" id="radio" value="1" name="radio-btn"><label>1</label>
+                <input type="radio" id="radio" value="2" name="radio-btn"><label>2</label>
+                <input type="radio" id="radio" value="3" name="radio-btn"><label>3</label>
+                <input type="radio" id="radio" value="4" name="radio-btn"><label>4</label>
+                <input type="radio" id="radio" value="5" name="radio-btn"><label>5</label>
+            </div><br>
+            <h1 id="data1"></h1>
+            <button onclick="start_game()">Play Game</button>
+            <br><br>
+            <input type="text" id="comp">
+            <h1 id="data"></h1>
+    </center>
+    <script>
+        let radio = document.querySelectorAll('.radios input');
+        function start_game(){
+            for(let i=0;i<radio.length;i++){
+            if(radio[i].checked){
+                let val=radio[i].value;
+                document.getElementById('data1').innerHTML='You selected number: '+val;
+                var com_gen=Math.floor(Math.random()*5+1);
+                document.getElementById('comp').value=com_gen;
+                if(val==com_gen){
+                    document.getElementById('data').innerHTML='You Win';
+                    document.getElementById('data').style.color="green";
+                }
+                else{
+                    document.getElementById('data').innerHTML='You lost. Try Again';
+                    document.getElementById('data').style.color="red";
+                }
+            }
+        }
+        }
+    </script>
+</body>
+</html>
