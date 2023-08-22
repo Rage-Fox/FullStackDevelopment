@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Events</title>
+</head>
+<body>
+    <form action="" id="myForm">
+        <label for="">First Name: </label>
+        <input type="text" name="fname">
+        <br><br>
+        <label for="">Last Name: </label>
+        <input type="text" name="lname">
+        <br><br>
+        <select name="">
+            <option>-- Select College --</option>
+            <option value="AEC">AEC</option>
+            <option value="ACET">ACET</option>
+            <option value="ACOE">ACOE</option>
+        </select>
+        <br><br>
+        <input type="button" onclick="submitform()" value="Submit">
+        <input type="button" onclick="resetform()" value="Reset">
+    </form>
+    <script>
+        function submitform(){
+            let form=document.getElementById("myForm");
+            form.submit();
+            // This is used to submit the entire form
+        }
+        function resetform(){
+            let form=document.getElementById("myForm");
+            form.reset();
+            // This is used to reset the entire form
+        }
+    </script>
+</body>
+</html>
