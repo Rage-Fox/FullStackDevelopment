@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <select name="" id="" style="width: 300px;height: 30px;" onchange="sample(this.value)">
+            <option>-- Select College --</option>
+            <option value="AEC">AEC</option>
+            <option value="ACET">ACET</option>
+            <option value="ACOE">ACOE</option>
+        </select>
+        <p id="p_id"></p>
+    </center>
+    <script>
+        function sample(clg){
+            document.getElementById("p_id").innerText=clg;
+        }
+    </script>
+</body>
+</html>

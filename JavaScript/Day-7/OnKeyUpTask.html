@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OnKeyUp Task</title>
+    <style>
+        input{
+            border: 2px solid grey;
+            border-radius: 5px;
+            outline: none;
+            /* Set outline to none inorder to override the default black outline when we select the input box */
+        }
+    </style>
+</head>
+<body>
+    <label for="">Enter your name: </label>
+    <input type="text" onkeyup="sample(this.value)" id="ins_id">
+    <br>
+    <span id="sp_id"></span>
+    <script>
+        function sample(text){
+            var spantag=document.getElementById("sp_id");
+            var inputfield=document.getElementById("ins_id");
+            if(text==""){
+                spantag.innerText="Please enter the field correctly!";
+                spantag.style.color="red";
+                inputfield.style.border="2px solid red";
+                inputfield.style.borderRadius="5px";
+            }
+            else if(text.length<=3){
+                spantag.innerText="Please enter more than 3 characters";
+                spantag.style.color="red";
+                inputfield.style.border="2px solid gold";
+                inputfield.style.borderRadius="5px";
+            }
+            else{
+                spantag.innerText="";
+                inputfield.style.border="2px solid green";
+                inputfield.style.borderRadius="5px";
+            }
+        }
+    </script>
+</body>
+</html>
