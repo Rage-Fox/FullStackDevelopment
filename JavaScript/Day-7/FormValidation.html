@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Events</title>
+</head>
+<body>
+    <form action="" id="myForm" onsubmit="return validateForm()">
+        <label for="">First Name: </label>
+        <input type="text" name="fname" id="fname_id">
+        <br><br>
+        <label for="">Last Name: </label>
+        <input type="text" name="lname" id="lname_id">
+        <br><br>
+        <label for="">College: </label>
+        <select name="college" id="clg_id">
+            <option value="">-- Select College --</option>
+            <option value="AEC">AEC</option>
+            <option value="ACET">ACET</option>
+            <option value="ACOE">ACOE</option>
+        </select>
+        <br><br>
+        <input type="submit" value="Submit">
+    </form>
+    <script>
+        function validateForm(){
+            let fname=document.getElementById("fname_id").value;
+            if(fname==""){
+                alert("Please enter your First Name");
+                return false;
+                // Return false is required to stop validateForm() function even if any one input field is not entered. If return false is not given, validateForm() will execute for every input field which is empty.
+            }
+            let lname=document.getElementById("lname_id").value;
+            if(lname==""){
+                alert("Please enter your Last Name");
+                return false;
+            }
+            let college=document.getElementById("clg_id").value;
+            if(college==""){
+                alert("Please select your College");
+                return false;
+            }
+        }
+    </script>
+</body>
+</html>
