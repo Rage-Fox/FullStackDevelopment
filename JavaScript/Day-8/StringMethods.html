@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String Methods</title>
+</head>
+<body>
+    <table border="1" cellspacing="0">
+        <tr>
+            <td>D</td>
+            <td>r</td>
+            <td>i</td>
+            <td>v</td>
+            <td>e</td>
+            <td> </td>
+            <td>R</td>
+            <td>e</td>
+            <td>a</td>
+            <td>d</td>
+            <td>y</td>
+        </tr>
+        <tr>
+            <td>0</td>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+            <td>4</td>
+            <td>5</td>
+            <td>6</td>
+            <td>7</td>
+            <td>8</td>
+            <td>9</td>
+            <td>10</td>
+        </tr>
+    </table>
+    <script>
+        let str="Drive Ready";
+        document.write(typeof(str)+"<br>");
+        // It will say as string
+        let str1=new String("Drive Ready");
+        document.write(typeof(str1)+"<br>");
+        // It will say as object
+        function ss(str_name){
+            document.write("<b>"+str_name+"</b><br>");
+        }
+        ss("Original String = "+str);
+        ss("String length = "+str.length);
+        ss("Character at index 3: "+str[3]);
+    </script>
+</body>
+</html>
