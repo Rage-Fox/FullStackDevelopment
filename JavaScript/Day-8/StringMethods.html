@@ -86,9 +86,30 @@
         func("str2.concat(str1): "+str2.concat(str1));
         // We can also combine multiple strings such as str.concat(str1,str2,....);
         // includes() returns true or false on whether a string is present or not
+        //  returns only boolean value
         func("includes(): "+str.includes("ready"));
         // Converting string into array-> split()
         func("String to array using split(): "+str.split(" "));
+        // startsWith method returns only boolean value
+        var name="Harsha";
+        func("Checking whether string starts with 'H': "+name.startsWith('H'));
+        // endsWith method returns only boolean value
+        func("Checking whether string ends with 'A': "+name.endsWith('A'));
+        // slice method
+        func("slice() method: "+str.slice(1,4));// Actual rive but shows riv only
+        // Remember that in slice method, ending value will be one less than mentioned
+        func("slice() method with single negative value: "+str.slice(-4));
+        // Remember that negative values will always print from singly mentioned value till -1 index
+        func("slice() method with two negative values: "+str.slice(-4,-2));
+        // substr method
+        // Same as slice() method but it allows only positive indexes
+        func("substring() method: "+str.substring(1,4));
+        // Incase, if we pass values in reverse manner as below, it'll take from small value till big value
+        func("substring() method: "+str.substring(4,1));
+        // Mentioning negative indexes in substring() will display entire string
+        func("substring() method but with negative value: "+str.substring(-4));
+        // substr() method differs as it takes starting index along with the length upto which it has to check
+        func("substr() method: "+str.substr(4,5));// Substring of length 5 starting from 4th index
     </script>
 </body>
 </html>
