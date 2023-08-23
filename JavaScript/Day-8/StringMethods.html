@@ -84,6 +84,11 @@
         var str2="ready";
         func("str1.concat(str2): "+str1.concat(str2));
         func("str2.concat(str1): "+str2.concat(str1));
+        // We can also combine multiple strings such as str.concat(str1,str2,....);
+        // includes() returns true or false on whether a string is present or not
+        func("includes(): "+str.includes("ready"));
+        // Converting string into array-> split()
+        func("String to array using split(): "+str.split(" "));
     </script>
 </body>
 </html>
