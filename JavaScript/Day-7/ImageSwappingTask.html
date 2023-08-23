@@ -37,6 +37,7 @@
             font-style: bold;
             font-size: 50px;
             cursor: pointer;
+            border: 2px solid black;
             border-radius: 25px;
         }
     </style>
@@ -44,15 +45,9 @@
 <body>
     <div class="main" style="height: 705px;width: 1520px;padding: 10px;display: flex;">
         <div class="left" style="height: 670px;width: 600px;border: 2px solid black;">
-            <div class="leftimage" onclick="selectleft(this)">
-                <img src="1.png"></img>
-            </div>
-            <div class="leftimage" onclick="selectleft(this)">
-                <img src="2.png"></img>
-            </div>
-            <div class="leftimage" onclick="selectleft(this)">
-                <img src="3.png"></img>
-            </div>
+            <div class="leftimage" onclick="selectleft(this)"><img src="1.png"></img></div>
+            <div class="leftimage" onclick="selectleft(this)"><img src="2.png"></img></div>
+            <div class="leftimage" onclick="selectleft(this)"><img src="3.png"></img></div>
         </div>
         <div class="middle" style="height: 670px;width: 200px;">
             <button class="btn" onclick="moveright()">&#8594;</button>
@@ -60,32 +55,28 @@
             <button class="btn" onclick="moveleft()">&#8592;</button>
         </div>
         <div class="right" style="height: 670px;width: 600px;border: 2px solid black;">
-            <div class="rightimage" onclick="selectright(this)">
-                <img src="4.png"></img>
-            </div>
-            <div class="rightimage" onclick="selectright(this)">
-                <img src="5.png"></img>
-            </div>
+            <div class="rightimage" onclick="selectright(this)"><img src="4.png"></img></div>
+            <div class="rightimage" onclick="selectright(this)"><img src="5.png"></img></div>
             <div class="rightimage"></div>
         </div>
         <script>
             var leftsrc="",imageleft,rightsrc="",imageright;
             function selectleft(leftimg){
-                if(leftimg.innerHTML.substr(27,5)!=""){
+                if(leftimg.innerHTML.substr(10,5)!=""){
                     if(leftsrc!=""){
                         imageleft.style.borderColor="black";
                     }
-                    leftsrc=leftimg.innerHTML.substr(27,5);
+                    leftsrc=leftimg.innerHTML.substr(10,5);
                     imageleft=leftimg;
                     leftimg.style.borderColor="blue";
                 }
             }
             function selectright(rightimg){
-                if(rightimg.innerHTML.substr(27,5)!=""){
+                if(rightimg.innerHTML.substr(10,5)!=""){
                     if(rightsrc!=""){
                         imageright.style.borderColor="black";
                     }
-                    rightsrc=rightimg.innerHTML.substr(27,5);
+                    rightsrc=rightimg.innerHTML.substr(10,5);
                     imageright=rightimg;
                     rightimg.style.borderColor="blue";
                 }
