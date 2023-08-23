@@ -6,7 +6,7 @@
     <title>String Methods</title>
 </head>
 <body>
-    <h1>String Indexes</h1>
+    <h2>String Indexing</h2>
     <table border="1" cellspacing="0">
         <tr>
             <td>D</td>
@@ -49,18 +49,40 @@
         </tr>
     </table>
     <script>
-        let str="Drive Ready";
+        var str="Drive Ready";
         document.write(typeof(str)+"<br>");
         // It will say as string
-        let str1=new String("Drive Ready");
+        var str=new String("Drive Ready");
         document.write(typeof(str1)+"<br>");
         // It will say as object
-        function ss(str_name){
-            document.write("<b>"+str_name+"</b><br>");
+        function func(str_name){
+            document.write(str_name+"<br>");
         }
-        ss("Original String = "+str);
-        ss("String length = "+str.length);
-        ss("Character at index 3: "+str[3]);
+        func("Original String = "+str);
+        func("String length = "+str.length);
+        // Indexing
+        func("Character at index 3: "+str[3]);
+        // charAt method
+        func("Using charAt(3): "+str.charAt(3));
+        // indexOf method
+        func("Using indexOf('v'): "+str.indexOf('v'));
+        // If there's no character exists in given string, then indexOf(char) will give output as -1
+        // lastIndexOf method
+        func("Using indexOf('r'): "+str.indexOf('r'));// 'r' from starting is index 1
+        func("Using lastIndexOf('e'): "+str.lastIndexOf('e'));
+        // trim method
+        var str="    Full Trim    ";
+        func("Using trim: "+str.trim());
+        // toLowerCase method
+        var str="DRIVE READY";
+        func("toLowercase(): "+str.toLowerCase());
+        // toUpperCase method
+        var str="drive ready";
+        func("toUppercase(): "+str.toUpperCase());
+        // concat method
+        // var str1="drive";
+        // var str2=" ready";
+        // func(".concat(): "+str1.concat(str2));
     </script>
 </body>
 </html>
