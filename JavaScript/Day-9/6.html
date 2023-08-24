@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task-6</title>
+</head>
+<body>
+    <script>
+        var n=parseInt(prompt("Enter a number:"));
+        var a=0,b=1,c;
+        if(n<=0){
+            document.write("Give a sufficient number again!")
+        }
+        else if(n==1){
+            document.write("The first "+n+" elements of fibonacci series is: ");
+            document.write(a);
+        }
+        else if(n==2){
+            document.write("The first "+n+" elements of fibonacci series are: ");
+            document.write(a+" "+b);
+        }
+        else{
+            document.write("The first "+n+" elements of fibonacci series are: ");
+            document.write(a+" "+b+" ");
+            n-=2;
+            while(n--){
+                c=a+b;
+                document.write(c+" ");
+                a=b;
+                b=c;
+            }
+        }
+    </script>
+</body>
+</html>

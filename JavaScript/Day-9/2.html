@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task-2</title>
+</head>
+<body>
+    <script>
+        var obj={
+            "name":"Harsha",
+            "rollno":"21A91A05G6",
+        };
+        document.write("<h2>Original Object</h2><br>");
+        for (const key in obj) {
+            document.write(key+" : "+obj[key]+"<br>");
+        }
+        obj["clg"]="AEC";
+        document.write("<h2>After adding a college key value pair into the existing object</h2><br>");
+        for (const key in obj) {
+            document.write(key+" : "+obj[key]+"<br>");
+        }
+        Object.assign(obj,{"batch":"Drive Ready FSD"});
+        document.write("<h2>You can also add any key value pair using Object.assign() property</h2><br>");
+        for (const key in obj) {
+            document.write(key+" : "+obj[key]+"<br>");
+        }
+    </script>
+</body>
+</html>

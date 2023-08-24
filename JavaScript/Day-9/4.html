@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task-4</title>
+</head>
+<body>
+    <script>
+        var arr=[1,2,3,4,5,6,7,8,9,10];
+        var num=parseInt(prompt("The array elements are: "+arr+"\nEnter a element from the array elements"));
+        document.write("The array elements are: "+arr+"<br>");
+        if(arr.includes(num)){
+            if(num%2==0){
+                document.write("The element "+num+" is even.");
+            }
+            else{
+                document.write("The element "+num+" is odd.");
+            }
+        }
+        else{
+            document.write("The element "+num+" is not in the array.");
+        }
+    </script>
+</body>
+</html>
