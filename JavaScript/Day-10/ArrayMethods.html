@@ -24,7 +24,7 @@
         });
         document.write(arr1+"<br>");
         // Map method for array of objects
-        let trainees=[
+        var trainees=[
             {
                 "name":"Harsha",
                 "rollno":"5G6",
@@ -70,14 +70,55 @@
         document.body.append(tb);
         // forEach method
         // The forEach() array method loops through any array, executing a provided function once for each array element in ascending index order. This function is referred to as a callback function.
+        // Remember that this method cannot return/create any new array.
         document.write("<h2>forEach method</h2>")
         let salaries=[40000,25000,30000];
-        document.write("Before increment: "+salaries+"<br>");
+        document.write("Before increment: "+salaries+"<br>"+"The increments are:");
         salaries.forEach(function(amount,index,arr){
             var increment=amount/10;
+            document.write(increment+" ");
             arr[index]=amount+increment;
         });
-        document.write("After increment: "+salaries+"<br>");
+        document.write("<br>"+"After increment: "+salaries+"<br>");
+        // filter method
+        document.write("<h2>filter method</h2>");
+        let nums=[8,9,89,60,4,9];
+        document.write("Original array: "+nums+"<br>");
+        // filter method can create a new array
+        let even_nums=nums.filter(function(ele,i,nums){
+            return ele%2==0;
+        })
+        document.write("Even numbers in the above array are: "+even_nums+"<br>");
+        // find method returns value
+        document.write("<h2>find method</h2>");
+        var trainees=['Harsha','Manoj','Varun','Phani'];
+        document.write("Original array: "+trainees+"<br>");
+        var getonename=trainees.find(function(name,i,trainees){
+            return name.startsWith('H');
+        });
+        document.write("The names in the array which starts with 'H' is: "+getonename+"<br>");
+        // some method returns boolean value
+        document.write("<h2>some method</h2>");
+        var mails=["harsha@gmail.com","manoj@gmail.com","varun@gmail.com","phani@gmail.com"];
+        document.write("Original mails array: "+mails+"<br>");
+        var mail_exists=mails.some(function(ele,i,arr){
+            return ele=="harsha@gmail.com";
+        });
+        document.write("Does Harsha's mail exist or not: "+mail_exists+"<br>");
+        // every method also returns single boolean value but checks all the values in a group
+        document.write("<h2>every method</h2>");
+        var marks=[55,12,87,86,54,64];
+        document.write("Student marks array: "+marks+"<br>");
+        var final_result=marks.every(function(score){
+            return score>=35;
+            // Checks as a group if all the marks of a single student got more than 35 marks to show that the student is fully passed!
+        })
+        if(final_result==true){
+            document.write("Student is passed!");
+        }
+        else{
+            document.write("Student failed as he got one of the subjects marks less than 35!");
+        }
     </script>
 </body>
 </html>
