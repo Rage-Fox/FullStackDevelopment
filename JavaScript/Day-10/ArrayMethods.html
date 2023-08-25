@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Methods In JavaScript</title>
+</head>
+<body>
+    <h2>Array Methods in JavaScript</h2>
+    <h4>The method creates a new JavaScript array and return it after iteration will be completed</h4>
+    <script>
+        // Array Methods: map(), forEach, filter, find, some, every
+        document.write("The array elements are: ");
+        let arr=['Harsha','Manoj','Varun','Phani'];
+        for (let i = 0; i < arr.length; i++) {
+            document.write(arr[i]+" ");
+        }
+        document.write("<h2>map method</h2>");
+        // Always remember that the arguments for all the array methods are (index_name, index_number, array_name)
+        // The Javascript map() method in JavaScript creates an array by calling a specific function on each element present in the parent array. It is a non-mutating method. Generally, the map() method is used to iterate over an array and call function on every element of the array.
+        let arr1=arr.map(function(trainee_name,index,arr){
+            document.write(trainee_name+" "+index+"<br>");
+            return "Dear "+trainee_name;
+        });
+        document.write(arr1+"<br>");
+        // Map method for array of objects
+        let trainees=[
+            {
+                "name":"Harsha",
+                "rollno":"5G6",
+            },{
+                "name":"Phani",
+                "rollno":"5D8",
+            }
+        ];
+        trainees.map(function(each_trainee,i,arr) {
+            document.write(each_trainee+" "+i+" : ");
+            document.write(each_trainee.name+", "+each_trainee.rollno+"<br>");
+        });
+        // To create a table, you can use the following code:
+        let tb=document.createElement("table");
+        tb.setAttribute("border","1");
+        tb.setAttribute("cellspacing","0");
+        tb.setAttribute("width","200px");
+        let tr=document.createElement("tr");
+        var th=document.createElement("th");
+        th.innerText="Index";
+        tr.appendChild(th);
+        var th=document.createElement("th");
+        th.innerText="Name";
+        tr.appendChild(th);
+        var th=document.createElement("th");
+        th.innerText="Roll Number";
+        tr.appendChild(th);
+        tb.appendChild(tr);
+        trainees.map(function(each_trainee,i,arr) {
+            let tr=document.createElement("tr");
+            let td=document.createElement("td");
+            td.setAttribute("border","1");
+            td.innerText=i+1;
+            tr.appendChild(td);
+            for (const key in each_trainee) {
+                let td=document.createElement("td");
+                td.setAttribute("border","1");
+                td.innerText=each_trainee[key];
+                tr.appendChild(td);
+            }
+            tb.appendChild(tr);
+        });
+        document.body.append(tb);
+        // forEach method
+        // The forEach() array method loops through any array, executing a provided function once for each array element in ascending index order. This function is referred to as a callback function.
+        document.write("<h2>forEach method</h2>")
+        let salaries=[40000,25000,30000];
+        document.write("Before increment: "+salaries+"<br>");
+        salaries.forEach(function(amount,index,arr){
+            var increment=amount/10;
+            arr[index]=amount+increment;
+        });
+        document.write("After increment: "+salaries);
+    </script>
+</body>
+</html>

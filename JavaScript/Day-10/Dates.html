@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dates in JavaScript</title>
+</head>
+<body>
+    <h2>Dates in JavaScript</h2>
+    <script>
+        const d=new Date();// This command will give us the date
+        // Year, month, day, hours, minutes, seconds, milliseconds
+        document.write(d+"<br>");
+        document.write("Year: "+d.getFullYear()+"<br>");
+        document.write("Month: "+d.getMonth()+"<br>");// Only numbers will come here
+        document.write("Next Month: "+(d.getMonth()+1)+"<br>");
+        document.write("Date: "+d.getDate()+"<br>");
+        document.write("Day: "+d.getDay()+"<br>");
+        document.write("Hours: "+d.getHours()+"<br>");
+        document.write("Minutes: "+d.getMinutes()+"<br>");
+        document.write("Seconds: "+d.getSeconds()+"<br>");
+    </script>
+</body>
+</html>
