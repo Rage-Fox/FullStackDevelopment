@@ -82,7 +82,7 @@
         document.write("<br>"+"After increment: "+salaries+"<br>");
         // filter method
         document.write("<h2>filter method</h2>");
-        let nums=[8,9,89,60,4,9];
+        var nums=[8,9,89,60,4,9];
         document.write("Original array: "+nums+"<br>");
         // filter method can create a new array
         let even_nums=nums.filter(function(ele,i,nums){
@@ -119,6 +119,27 @@
         else{
             document.write("Student failed as he got one of the subjects marks less than 35!");
         }
+        // reduce method
+        document.write("<h2>reduce method</h2>");
+        // It takes 4 arguments having first argument as the accumulator
+        var nums=[7,90,8,100,50,49];
+        document.write("Original array: "+nums+"<br>");
+        var sum=nums.reduce(function(accumulator,ele,i,arr){
+            return accumulator+ele;
+        },0);
+        // 0 acts as the accumulator value
+        document.write("The sum of array elements is: "+sum+"<br>");
+        // It can also be used to find the maximum element of an array
+        var maxx=nums.reduce(function(accumulator,ele,i,arr){
+            // Always remember that the returned value will be stored in the accumulator, in which the starting accumulator value is nums[0].
+            if(accumulator>ele){
+                return accumulator;
+            }
+            else{
+                return ele;
+            }
+        },nums[0]);
+        document.write("The maximum of array elements is: "+maxx+"<br>");
     </script>
 </body>
 </html>
