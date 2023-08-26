@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>String Methods Task</title>
+</head>
+<body>
+	<h1>String Methods</h1>
+	<script type="text/javascript">
+		//substr;
+		var name="Harsha";
+		document.write("<b>"+"the substr of "+ name+" of length 3 from index 0 is "+name.substr(0,3)+"</b>"+"<br>");
+		//substring
+		var s="Javascript";
+		document.write("<b>"+"the substring of "+s+" is "+s.substring(0,4)+"</b>"+"<br>");
+		//replace
+		var n1="Java script";
+		document.write("<b>"+"replacing script with html "+n1.replace('script','HTML')+"</b>"+"<br>");
+		//search
+		var n2="I like Java script";
+		document.write("<b>"+"search java in "+n2+" "+n2.search('Java')+"</b>"+"<br>")
+		//toLocaleLowerCase
+		var n3="SCRIPT"
+		document.write("<b>"+"by converting SCRIPT into lower case is "+n3.toLocaleLowerCase()+"</b>"+"<br>")
+		//toLocaleUpperCase
+		var n4="script"
+		document.write("<b>"+"by converting cript into upper case is "+n3.toLocaleUpperCase()+"</b>"+"<br>");
+		//indexof
+		var n5="Javascript"
+		document.write("<b>"+"the index of v in Javascript is "+n5.indexOf('v')+"</b>"+"<br>");
+		//includes()
+		var n6="HTML"
+		document.write("<b>"+"Includes method "+n6.includes('HTML')+"</b>"+"<br>");
+		//slice
+		var n7="HARSHA";
+		document.write("<b>"+"slicing of "+n7+" is "+n7.slice(1,4)+"</b>"+"<br>");
+		//concat 
+		document.write("<b>"+"Concat of HTML and Javascript is "+n6.concat(n5)+"</b>"+"<br>");
+		//lastIndex
+		document.write("<b>"+"The lastIndex of a is Javascript is "+n5.lastIndexOf('a')+"</b>"+"<br>");
+		//charcodeAt
+		document.write("<b>"+"The charCode method "+n5.charCodeAt(0)+"</b>"+"<br>")
+		//trim
+		n8="     HTML"
+		document.write("<b>"+"trim method "+n8.trim()+"</b>"+"<br>"); 
+		//charat
+		document.write("<b>"+"The character at index 0 in javasript is "+n5.charAt(0)+"</b>"+"<br>");
+		//valueOf
+		document.write("<b>"+"The valueof "+n5+"is"+n5.valueOf()+"</b>"+"<br>")
+		//split()
+		var n9="H.T.M.L";
+		document.write("<b>"+"splitting of "+n9+"is "+n9.split('.')+"</b>"+"<br>")
+		//tostring
+        n5=10;
+		document.write("<b>"+"tostring method of converting number 10 is "+n5.toString()+"</b>"+"<br>");
+		//match
+		var n10="I Like Javascript";
+		document.write("<b>"+"match method of "+n10+" with " +"Like is "+n10.match('Like')+"</b>"+"<br>")
+	</script>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<html>
+    <head>
+        <title>Array Methods Task</title>
+    </head>
+    <body>
+        <h2><u>Array Methods</u></h2>
+        <script>
+            let ar = [6,5,4,3,2,1];
+            document.write("original array : ["+ ar+"]<br>")
+            let ar2 = ar.map(function(l){return l*69});
+            document.write("array map method, 69*i : ["+ar2+"]<br>");
+            let ar3 = ar.filter(function(x){return x%2==0});
+            document.write("ar.filter(), i%2==0: ["+ar3+"]<br>");
+            ar.sort();
+            document.write("ar.sort() : ["+ar+"]<br>");
+            document.write("current array : ["+ar+"]<br>")
+            let ar5 = []
+            ar.forEach(function(x){ar5.push(x+2)});
+            document.write("foreach, i+2 : ["+ar5+"]<br>")
+            document.write("concat, ["+ar+"] + [10,9,8] : ["+ar.concat([10,9,8]+"]<br>"))
+            let x = ar.every(function(x){return x<10})
+            document.write("every, every item < 10 ? : "+x+"<br>");
+            let y = ar.some(function(x){return x>50})
+            document.write("some, any item in array > 50 ? : "+y+"<br>")
+            let z = ar.includes(1);
+            document.write("array includes 1 ? :"+z+"<br>")
+            let star = ['hi','hello','how','are','you'];
+            document.write("string array = ["+star+"]<br>")
+            document.write("join('') : "+star.join('')+"<br>")
+            let num = ar.reduce(function(a,b){return a+b});
+            document.write("reduce, a+b (sum of array): "+num+"<br>")
+            let fnd = ar.find(function(x){return x>1});
+            document.write("find(), first i where, i>1 : "+fnd+"<br>");
+            let fndidx = ar.findIndex(function(x){return x>2});
+            document.write("findIndex(), first i's index where i>2 : "+fndidx+"<br>")
+            let idxof = ar.indexOf(2);
+            document.write("indexOf(2),: "+idxof+"<br>")
+            let ar8 = ar.fill(69);
+            document.write("ar.fill(69) : ["+ar8+"]<br>");
+            ar = [1,2,3,4,5,6]
+            document.write("ar.slice(1,3) : ["+ar.slice(1,3)+"]<br>")
+            document.write("ar.reverse() : ["+ar.reverse() + "]<br>")
+            ar.push(69);
+            document.write("ar.push(69) : ["+ar+"]<br>")
+            ar.pop();
+            document.write("ar.pop() : ["+ar+"]<br>")
+            ar.shift(1);
+            document.write("ar.shift(1) : ["+ar+"]<br>")
+            ar.unshift(1);
+            document.write("ar.unshift(1) : ["+ar+"]<br>")
+        </script>
+    </body>
+</html>
