@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ES6 Array Destructing Operators</title>
+</head>
+<body>
+    <script>
+        document.write("<h1>Array Destructing Operators</h1>");
+        let arr=[10,20,30,40];
+        // let a=arr[0];
+        // let b=arr[1];
+        // let c=arr[2];
+        // let d=arr[3];
+        let[a,b,c,d]=[10,20,30,40];
+        document.write("Original Array: "+arr+"<br>");
+        document.write("let[a,b,c,d]=[10,20,30,40];<br>");
+        document.write("a="+a+", b="+b+", c="+c+", d="+d+"<br>");
+        let[e,,,h]=arr;// e=10,h=40
+        document.write("let[e,,,h]=arr;<br>");
+        document.write("e="+e+", h="+h+"<br>");
+    </script>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ES6 Regular Expressions In JavaScript</title>
+</head>
+<body>
+    <script>
+        document.write("<h1>Regular Expressions</h1>");
+        // This is a normal string
+        let str="Drive Ready FSD Batch";
+        // This is the way that we have to create a regular expression in JavaScript
+        let re1=/batch/i;
+        // Regularly we give as /batch/ representing a regular expression
+        // Here 'i' after last '/' means that it'll check in any format(uppercase or lowercase)
+        let output1=re1.test(str);//Gives a boolean value whether expression exists or not in the given string
+        if(output1==true){
+            document.write("Valid<br>");
+        }
+        else{
+            document.write("Invalid<br>");
+        }
+        document.write("String=> '"+str+"' contains regular expression=>'"+re1+"' is: '"+output1+"'<br>");
+        // Starts with a character
+        let re2=/^b/;
+        let output2=re2.test("batch");//true
+        document.write("String=> 'batch' contains regular expression=>'"+re2+"' is: '"+output2+"'<br>");
+        let output3=re2.test("tbatch");//false
+        document.write("String=> 'tbatch' contains regular expression=>'"+re2+"' is: '"+output3+"'<br>");
+        // 'g' for multiple indexes
+        let re3=/batch/g;
+        let res=re3.exec("full stack batch course batch");
+        document.write("The expression=> "+re3+" present in string 'full stack batch course batch' is "+res.index+"<br>");
+        res=re3.exec("full stack batch course batch");
+        // We will use res.index as many times as we have that particular regular expression present in the original string
+        document.write("It is also present at the index "+res.index+"<br>");
+        // Phone Number Validation
+        document.write("<h4>Phone Number Validation using Regular Expressions in JavaScript</h4>");
+        let re4=/^[0-9]{10}$/;
+        // Dollar symbol stops exceeding the length/range {10}
+        output=re4.test("9876543210");
+        document.write("9876543210 is a "+output+" number<br>");
+        // Not taking in number which starts with '0'
+        // Keep in mind that as you wrote a condition for '0', the remaining range/length is {9}
+        re4=/^[1-9][0-9]{9}$/;
+        output=re4.test("0123456789");
+        document.write("0123456789 is a "+output+" number<br>");
+    </script>
+</body>
+</html>

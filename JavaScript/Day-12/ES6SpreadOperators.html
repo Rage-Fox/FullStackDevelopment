@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ES6 Spread Operators</title>
+</head>
+<body>
+    <script>
+        document.write("<h1>Spread Operators</h1>");
+        document.write("<h2>It takes an iteration and expands or seperates each element.</h2>");
+        document.write("<h2>Notation as ...(triple dots)</h2>");
+        document.write("<h2>You can only see the difference in console.log() only</h2>");
+        let arr=[79,89,98,67];
+        console.log(arr);
+        console.log(...arr);
+        // Passing array to combine in the new array that we created
+        let arr1=[4,5,arr];
+        console.log(arr1);
+        // Here the elements shown are seperated from original array as we didn't mention ... while adding
+        console.log(...arr1);
+        let arr2=[4,5,...arr];
+        console.log(arr2);
+        // Here that problem will be solved as we passed arr as ...arr so instead of array it takes values inside that array
+        console.log(...arr2);
+        // Here we are passing 2 arrays into a single array
+        let arr3=[1,2,3,4];
+        let arr4=[5,6,7,8];
+        let arr5=[arr3,9,10,arr4];
+        console.log(arr5);
+        // Solving the problem above using ...(triple dots)
+        let arr6=[...arr3,9,10,...arr4];
+        console.log(arr6);
+        // Applying Spread Operator to string
+        let str="Drive Ready";
+        console.log(str);
+        console.log(...str);
+        // Applying spreading and passing through a function
+        function sum(a,b,c,d){
+            return a+b+c+d;
+        }
+        let arr7=[10,20,30,40];
+        console.log(sum(arr7));//Takes arr7 as a single argument 'a' and remaining 'b','c' and 'd' remain undefined
+        console.log(sum(...arr7));//Takes each array values as a,b,c,d and displays sum value correctly
+    </script>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ES6 Constructors In JavaScript</title>
+</head>
+<body>
+    <script>
+        // We can use classes in JavaScript
+        class Student{
+            // constructor(rno=1234){
+            //     this.rollno=rno;
+            // }
+            // Two constructors in a single class means that we're implementing "Constructor Overloading"
+            // Note: Remember that JavaScript doesnot support "Constructor Overloading"
+            constructor(rno,fname,lname,clg){
+                this.rollno=rno;
+                this.firstname=fname;
+                this.lastname=lname;
+                this.college=clg;
+                // We can also use methods/functions inside the classes
+                this.getFullName=function(){
+                    return this.lastname+" "+this.firstname;
+                }
+            }
+        };
+        document.write("<h1>Classes in ES6 JavaScript</h1>");
+        document.write("<h3>Using Student constructor class</h3>");
+        let obj1=new Student("21A91A05G6","Harshendra Subba Reddy","Nallamilli","AEC");
+        // The memory will not be allocated for class but instead the memory will only allocate to an object whenever we create a new one
+        document.write("obj1.rollno= "+obj1.rollno+", obj1.firstname= "+obj1.firstname+", obj1.lastname= "+obj1.lastname+", obj1.college= "+obj1.college+"<br>");
+        let obj2=new Student("21A91A05D8","S.S.Phani Durgeswar","Guttula","AEC");
+        document.write("obj2.rollno= "+obj2.rollno+", obj2.firstname= "+obj2.firstname+", obj2.lastname= "+obj2.lastname+", obj2.college= "+obj2.college+"<br>");
+        document.write("obj1.getFullName(): "+obj1.getFullName()+"<br>");
+        class Car{
+            constructor(cname,model,color){
+                this.carname=cname;
+                this.model=model;
+                this.colour=color;
+            }
+        };
+        document.write("<h3>Using Car constructor class</h3>");
+        let obj3=new Car("Range Rover","Land","White");
+        document.write("obj3.carname= "+obj3.carname+", obj3.model= "+obj3.model+", obj3.colour= "+obj3.colour+"<br>");
+    </script>
+</body>
+</html>

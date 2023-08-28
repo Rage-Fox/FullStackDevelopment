@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regular Expression Task</title>
+</head>
+<body>
+    <h2>Regular Expression Phone Number Check Validity</h2>
+    <input type="text" name="" id="in_id">
+    <button onclick="check_num_or_not()">Check Validity</button>
+    <button onclick="check_characters_or_not()">Check Characters</button>
+    <br>
+    <span id="msg_id"></span>
+    <script>
+        function check_num_or_not(){
+            let re=/^[0-9]{10}$/;
+            let n=document.getElementById("in_id").value;
+            let output=re.test(n);
+            if(output==true){
+                document.getElementById("msg_id").innerText="Correct Format";
+                document.getElementById("msg_id").style.color="green";
+            }
+            else{
+                document.getElementById("msg_id").innerText="Please Enter Correct Format";
+                document.getElementById("msg_id").style.color="red";
+            }
+        }
+        function check_characters_or_not(){
+            // re=/^[a-z]+$/;// only small letters
+            // re=/^[A-Z]+$/;// only big letters
+            // re=/^[a-zA-Z]+$/;// small and big letters
+            // re=/^[a-zA-Z0-9]+$/;// (Alphanumeric)small and big letters along with numbers
+            // re=/^\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$/;// for gmail verification
+        }
+    </script>
+</body>
+</html>
