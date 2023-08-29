@@ -1,0 +1,15 @@
+With Internet:
+After installing NodeJs, check whether it has installed correctly using two commands in command prompt as "nodejs -v" and "npm -v"
+We have to open folder in the file explorer and then open command prompt from there.
+Then enter "code ." to open that particular folder in Visual Studio Code
+Then open terminal in VS Code using "Ctrl+Shift+`" and then enter the following commands:
+-> npm install -g create-react-app
+-> npx create-react-app appname(app/project name has to be in lowercase)
+-> Move to that specific app folder using "cd appnamefolder"
+-> npm cache clean --force
+-> npm start
+
+Without Internet:
+-> Extract zip file in "Default File" Folder
+-> Open VS code and open that Folder
+-> Then, you have to give two commands "npm install" and "npm start"
