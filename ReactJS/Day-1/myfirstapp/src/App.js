@@ -1,8 +1,12 @@
 import logo from './logo.svg';
 import './App.css';
 import Home from './home';
-
+import About from './about';
+import { trainee,a } from './person';
+// {trainee} is a named-export format
 function App() {
+  console.log(trainee);
+  console.log(a);
   return (
     <div className="App">
       <header className="App-header">
@@ -20,6 +24,8 @@ function App() {
         </a>
         {/* Calling the Home component using ReactJS */}
         <Home />
+        {/* Now we are trying to pass arguments inside particular components */}
+        <About name={a}/>
       </header>
     </div>
   );
