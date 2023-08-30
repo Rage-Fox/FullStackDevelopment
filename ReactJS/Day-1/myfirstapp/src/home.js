@@ -5,7 +5,8 @@ function Home(){
     return(
         <>
             <h1>This is my home page</h1>
-            <img src={Logo}></img>
+            <p>This is an Image</p>
+            <img src={Logo} height="500px" width="800px"></img>
         </>
     )
 };
