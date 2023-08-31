@@ -5,7 +5,9 @@ function Menu(){
             <Link to="home">Home</Link>&nbsp;|&nbsp;
             <Link to="about">About</Link>&nbsp;|&nbsp;
             <Link to="services">Services</Link>&nbsp;|&nbsp;
-            <Link to="contact">Contact</Link>
+            <Link to="contact">Contact</Link>&nbsp;|&nbsp;
+            <Link to="student">Student</Link>&nbsp;|&nbsp;
+            <Link to="trainees">Trainees</Link>
         </div>
     )
 };

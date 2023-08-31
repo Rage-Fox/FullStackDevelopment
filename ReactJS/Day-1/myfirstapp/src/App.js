@@ -8,6 +8,8 @@ import { trainee,a } from './person';
 // {trainee} is a named-export format
 import {BrowserRouter, Routes, Route} from "react-router-dom";
 import Menu from './menu';
+import Student from './student';
+import Trainees from './trainees';
 function App() {
   return (
     <div className="App">
@@ -24,6 +26,9 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/services" element={<Service />} />
           <Route path="/contact" element={<Contact />} />
+          {/* Passing a value as an argument from the component itself */}
+          <Route path="/student" element={<Student name="Harsha" rollno="21A91A05G6" clg="AEC" branch="CSE" />} />
+          <Route path="/trainees" element={<Trainees />} />
         </Routes>
       </BrowserRouter>
     </div>
