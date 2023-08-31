@@ -1,13 +1,15 @@
-import Logo from './logo.svg';
-// We are importing an svg image file to this home.js file
 function Home(){
-    // <></> are called as React Fragment   s
+    // Internal Styles
+    let ss={
+        background: "red",
+        color: "green",
+        marginTop: "100px",//Donot use the word as margin-top
+    };
+    // <></> are called as React Fragments
     return(
-        <>
+        <div style={ss}>
             <h1>This is my home page</h1>
-            <p>This is an Image</p>
-            <img src={Logo} height="500px" width="800px"></img>
-        </>
+        </div>
     )
 };
 export default Home;
