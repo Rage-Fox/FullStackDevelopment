@@ -12,9 +12,12 @@ import Student from './student';
 import Trainees from './trainees';
 import Count from './count';
 import Events from './events';
+import RandomColour from './RandomColour';
+import ImageSliding from './ImageSliding';
+import IncrementAndDecrement from './IncrementAndDecrement';
 function App() {
   return (
-    <div className="App">
+    <div className="App"> 
       {/* In ReactJS, instead of "class", we have to use "className" */}
       <Home />
       <About />
@@ -37,6 +40,11 @@ function App() {
       </BrowserRouter>
       <Count />
     </div>
+    // <div className="App">
+    //   <RandomColour />
+    //   <ImageSliding />
+    //   <IncrementAndDecrement />
+    // </div>
   );
 }
 
