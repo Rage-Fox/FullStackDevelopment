@@ -44,7 +44,7 @@ function Products(){
                         </div>
                     );
                 })
-            };
+            }
             </div>
         </div>
     );
