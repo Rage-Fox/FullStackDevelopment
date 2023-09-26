@@ -1,0 +1,48 @@
+=======
+Basics:
+=======
+mongosh --> to show details about current mongodb application and then use mongosh terminal
+show dbs --> to show databases in mongosh
+use databasename --> to create and switch to a newdatabase and use it's data
+db --> to show name of the database which we're currently using
+=====================
+Creating Collections:
+=====================
+db.createCollection("collectionname") --> used to create a collection
+show collections --> to show collections present in the current database
+========================
+Insert into Collections:
+========================
+db.collectionname.insertOne({FieldName:"FieldValue",PhoneNumber:"9876543210",RollNumber:"21A91A05G6",Marks:100}) --> to insert one document into the database collection
+db.collectionname.insertMany([{},{},{}]) --> to insert multiple documents at once in the collection
+=======================
+Finding in Collections:
+=======================
+db.collectionname.find() --> to see all the documents in a particular collection
+db.Students.find({Name:"Harsha"}) --> To see the records/documents with the name as "Harsha"
+db.Students.find().count() --> To see the count of records/documents present in our collection
+==========================
+Updating into Collections:
+==========================
+db.Students.updateOne({RollNumber:"21A91A05G6"},{$set:{PhoneNumber:"9063932639"}}) --> Finding a unique id(rollnumber) in a record and then based on that, we are updating the phone number and setting it up in the existing record/document
+=====================
+Deletion Collections:
+=====================
+db.Students.deleteOne({Name:"Sriram"}) --> delete a document where the field value matches with the name provided
+db.Students.remove() --> deletes the entire collection Students
+================================
+Upsert Insertion in Collections:
+================================
+db.Students.updateOne({RollNumber:"21A91A05G6"},{$set:{Department:"CSE"}},{upsert:true}) --> upsert is used to update/insert the field name in the collection document if that field name doesn't exists
+====================
+Conditional Queries:
+====================
+db.Students.find({$or:[{Name:"Harsha"},{Marks:100}]}) --> displaying documents of name Harsha or having marks 100 using $or operation
+db.Students.find({$and:[{Name:"Harsha"},{Marks:100}]}) --> displaying documents of name Harsha and having marks 100 using $and operation
+db.Students.find({Name:{$in:["Harsha","Phani"]}}) --> displaying documents of name containing in the list of names Harsha and Phani
+=============
+View Queries:
+=============
+db.Students.find().limit(2) --> Views only the first two records/documents of the collection
+db.Students.find().skip(2) --> Skips first two records/documents of the collection and then shows the remaining records/documents
+db.Students.find().skip(1).limit(2) --> Skips 1st record and then displays from 2nd document till the limit hits 2 (meaning 2nd and 3rd document will be displayed)
