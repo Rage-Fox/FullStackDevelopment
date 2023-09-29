@@ -27,5 +27,5 @@ db.BusData.find({capacity:{$gt:50}}).sort({capacity:1}) --> Sorting data in asce
 db.BusData.find({capacity:{$gt:50}}).sort({capacity:-1}) --> Sorting data in descending order based on capacity where capacity is greater than 50
 ==================================
 Aggregate Operations and Grouping:
-=================================
+==================================
 db.BusData.aggregate([{$group:{_id:"$regno",totalCount:{$sum:1}}}]) --> Displays data about how many bus trips are there based on each bus's both _id and regno
