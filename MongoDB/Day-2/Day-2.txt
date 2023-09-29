@@ -1,0 +1,31 @@
+Create a new collection "BusData" and Import BusData.csv file into MongoDB using Compass Application
+==========
+Equals to:
+==========
+db.BusData.find({capacity:{$eq:50}}) --> Displaying documents of whose capacity is 50
+db.BusData.find({capacity:{$eq:50}}).count() --> Finding the count of people who are having capacity exactly equal to 50
+==============
+Not equals to:
+==============
+db.BusData.find({capacity:{$ne:50}}) --> Displaying documents of whose capacity is not 50
+db.BusData.find({capacity:{$ne:50}}).count() --> Finding the count of people who are having capacity not equal to 50
+===========================
+Less than and greater than:
+===========================
+db.BusData.find({$and:[{capacity:{$gt:50}},{capacity:{$lt:60}}]}) --> Displaying documents who are having capacity greater than 50 and less than 60
+db.BusData.find({$and:[{capacity:{$gt:50}},{capacity:{$lt:60}}]}).count() --> Count of documents who are having capacity greater than 50 and less than 60
+===============================================
+Less than equals to and greater than equals to:
+===============================================
+db.BusData.find({$and:[{capacity:{$gte:50}},{capacity:{$lte:60}}]}) --> Displaying documents who are having capacity greater than equals to 50 and less than equals to 60
+db.BusData.find({capacity:{$gte:50,$lte:60}}) --> Same output as above but without using $and operator
+db.BusData.find({$and:[{capacity:{$gte:50}},{capacity:{$lte:60}}]}).count() --> Count of documents who are having capacity greater than equals to 50 and less than equals to 60
+============
+Sorted Data:
+============
+db.BusData.find({capacity:{$gt:50}}).sort({capacity:1}) --> Sorting data in ascending order based on capacity where capacity is greater than 50
+db.BusData.find({capacity:{$gt:50}}).sort({capacity:-1}) --> Sorting data in descending order based on capacity where capacity is greater than 50
+==================================
+Aggregate Operations and Grouping:
+==================================
+db.BusData.aggregate([{$group:{_id:"$regno",totalCount:{$sum:1}}}]) --> Displays data about how many bus trips are there based on each bus's both _id and regno
